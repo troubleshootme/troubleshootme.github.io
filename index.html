@@ -1,95 +1,350 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Market Report - Test</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .chart-section {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .chart-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        .chart-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .test-info {
-            background: #e8f5e8;
-            border: 1px solid #4caf50;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .url-info {
-            font-family: monospace;
-            font-size: 12px;
-            color: #666;
-            margin-top: 10px;
-        }
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif; 
+        line-height: 1.6; 
+        color: #333; 
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1, h2, h3 { 
+        color: #2c3e50; 
+        margin-top: 25px; 
+        margin-bottom: 15px;
+    }
+    h2 {
+        background-color: #00adf1;
+        color: white;
+        padding: 15px 20px;
+        margin: 25px 0 20px 0;
+        font-size: 1.4em;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+    table { 
+        border-collapse: collapse; 
+        width: 100%; 
+        margin: 15px 0;
+        border: 1px solid #ddd;
+    }
+    th { 
+        background-color: #2c3e50;
+        color: white;
+        font-weight: bold; 
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    td { 
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    tr:nth-child(even) { 
+        background-color: #f9f9f9; 
+    }
+    .positive-change {
+        color: #27ae60;
+        font-weight: bold;
+    }
+    .negative-change {
+        color: #d62643;
+        font-weight: bold;
+    }
+    .neutral-change {
+        color: #7f8c8d;
+        font-weight: bold;
+    }
+    ul, ol { 
+        margin: 15px 0; 
+        padding-left: 25px; 
+    }
+    li { 
+        margin: 8px 0; 
+    }
+    strong { color: #2c3e50; }
+    .alert-box {
+        background-color: #fff3cd;
+        border: 1px solid #ffeaa7;
+        border-radius: 4px;
+        padding: 15px;
+        margin: 15px 0;
+    }
+    .recommendation-box {
+        background-color: #e8f5e8;
+        border: 1px solid #c3e6c3;
+        border-radius: 4px;
+        padding: 15px;
+        margin: 15px 0;
+    }
+    /* Second layer enhancement styling */
+    .second-layer-enhancement {
+        background-color: #fdfdfd;
+        border: 1px solid #e8e8e8;
+        border-left: 3px solid #d62643;
+        border-radius: 6px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 2px 4px rgba(214, 38, 67, 0.08);
+        position: relative;
+    }
+    /* Predictive Analytics badge removed for better mobile viewing */
+    /*
+    .second-layer-enhancement::before {
+        content: "Predictive Analytics";
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        background: linear-gradient(45deg, #d62643, #ff6b7a);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+    */
+    .second-layer-enhancement h4 {
+        margin-top: 0;
+        color: #d62643;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
     </style>
-</head>
-<body>
-    <div class="header">
-        <h1>🚛 Daily Market Report - Integration Test</h1>
-        <p>Generated on July 17, 2025 at 05:38 PM</p>
-    </div>
     
-    <div class="test-info">
-        <h3>🧪 Integration Test Results</h3>
-        <p>This is a test report to verify the complete chart generation and GitHub hosting integration.</p>
+    <div style="text-align: center; margin-bottom: 30px;">
+        <a href="https://expeditedtransportagency.com" target="_blank"><img src="https://expeditedtransportagency.com/wp-content/uploads/2019/11/Expedited-Transport.png" 
+             alt="Expedited Transport Agency Logo" 
+             style="max-width: 300px; height: auto; margin-bottom: 20px;"></a>
+    </div>
+    <h1 style="text-align: center; font-size: 2.5em;">📊 Daily Market Intelligence Report</h1>
+    <p style="text-align: center;"> Thursday, July 17, 2025</p>
+    <hr>
+    
+    <h2>📊 Top-Line Summary</h2>
+    <p>The national freight market presents a fractured landscape today. The flatbed sector is exceptionally active with over 37,000 available loads visible in real-time, yet paid rates are tracking just below posted averages, indicating that capacity is successfully absorbing the high demand. In contrast, the van market remains soft with ample capacity and stable, low rates. Reefer markets continue to see seasonal pressure, though the premium between posted and paid rates has narrowed, suggesting a slight easing from peak tightness. Severe weather in the Gulf Coast and New England is causing localized disruptions, while regulatory discussions around truck parking and speed limiters offer positive long-term news for carrier relations.</p>
+    
+    <h2>📈 National Data Dashboard</h2>
+    <table>
+        <tbody>
+    
+            <tr>
+                <td><strong>Vans</strong></td>
+                <td colspan="2">The van market remains decidedly soft, characterized by loose capacity and muted rate activity. Real-time data shows paid rates are stable at $1.85/mile, matching posted rates, which confirms a lack of upward pressure and ample driver availability across a moderate volume of 17,904 available loads. This environment, where equipment is readily accessible, contrasts with slightly higher regional averages from a week ago, suggesting a continued gentle softening or bottoming-out of rates. For brokers, this signals significant negotiating leverage and a favorable pricing environment for shippers.</td>
+            </tr>
+        
+            <tr>
+                <td><strong>Reefers</strong></td>
+                <td colspan="2">Reefer markets continue to feel the effects of seasonal produce, but conditions may be slightly moderating. While capacity remains relatively tight, the premium on paid rates ($2.21/mile) over posted rates ($2.20/mile) has compressed significantly from previous days. This indicates that while carriers still hold pricing power on nearly 7,400 available loads, the frantic competition for equipment may be easing. Week-old data showed higher national averages, suggesting that current real-time rates reflect a market that is still firm but potentially past its absolute seasonal peak, with capacity becoming slightly more predictable.</td>
+            </tr>
+        
+            <tr>
+                <td><strong>Flatbeds</strong></td>
+                <td colspan="2">The flatbed sector is defined by a surge in demand, with real-time data showing a massive 37,076 available loads. Despite this high volume, the market appears remarkably balanced, as the average paid rate of $2.27/mile is tracking just below the posted average of $2.28. This dynamic suggests that while freight is abundant due to strong construction and industrial activity, sufficient equipment and driver capacity are meeting the demand, preventing significant rate inflation. This presents a unique opportunity for brokers to secure high-volume business without facing runaway spot prices, though securing reliable capacity in this busy environment remains critical.</td>
+            </tr>
+        
+        <tr>
+            <td><strong>Diesel Price</strong></td>
+            <td colspan="2"><strong>$3.73/gal</strong> - The national average diesel price has ticked up to $3.73/gallon. This steady, incremental increase continues to apply pressure on carrier operating costs, tightening margins on spot freight and reinforcing the importance of accurate fuel surcharge calculations in quoting.</td>
+        </tr>
+    
+        <tr>
+            <td><strong>OTRI Trends</strong></td>
+            <td colspan="2">Tender rejections are lowest in the van sector, consistent with loose capacity and stable rates. Reefer rejection rates remain elevated due to seasonal demand, but the narrowing spread between paid and posted rates suggests a slight decrease in rejections for high-paying spot loads. Flatbed rejections are likely moderate; despite high freight volume, stable rates indicate carriers are accepting tendered loads at current market levels.</td>
+        </tr>
+    </tbody></table>
+    <h2>⛽ Diesel Price Analysis</h2>
+    
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: #2c3e50; margin-bottom: 15px;">Price Trend Over Time</h3>
+        <div style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/diesel_trend_chart_20250717_173923.png" 
+                 alt="Diesel Price Trend Chart" 
+                 style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+    </div>
+            
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: #2c3e50; margin-bottom: 15px;">AAA Historical Price Comparison</h3>
+        <div style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/aaa_comparison_chart_20250717_173923.png" 
+                 alt="AAA Historical Price Comparison Chart" 
+                 style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+    </div>
+            
+    <h2>🌦️ Weather & Seasonal Intelligence</h2>
+    <h3>Current Major Weather Events:</h3>
+    <ul>
+    
+        <li><strong>Flash Flooding on Gulf Coast (Southeast Louisiana (St. Charles, St. John The Baptist Parishes)):</strong> Life-threatening flash flooding is occurring, impacting areas around New Orleans. Expect significant delays and potential closures on the I-10 and I-55 corridors. Pickups and deliveries in the region will be severely hampered, and carriers may refuse to enter affected zones.</li>
+        
+        <li><strong>Severe Thunderstorms & Tornado Threat (Northern & Central Maine):</strong> Active Tornado Warnings for severe thunderstorms are in effect. This poses a direct safety risk to drivers and will cause operational shutdowns on local and regional routes, potentially affecting the northernmost sections of the I-95 corridor.</li>
+        
+        <li><strong>Flash Flood Warning (Northeastern New Mexico):</strong> Thunderstorms are producing heavy rain and flash flooding. This will cause delays and hazardous driving conditions on regional routes and portions of the I-25 corridor, slowing freight movement through the region.</li>
+        </ul>
+    <div class="second-layer-enhancement">
+        <h4>⛈️ Weather Impact Cascade</h4>
         <ul>
-            <li>✅ Chart generation: Working</li>
-            <li>✅ GitHub upload: Working</li>
-            <li>✅ HTML report generation: Working</li>
-            <li>✅ GitHub Pages hosting: Working</li>
+            <li><strong>Immediate Operational Impact:</strong> Louisiana flooding will clear by July 20th based on forecast data, but Friday's continued rain will extend I-10 and I-55 disruptions through the weekend</li>
+            <li><strong>Secondary Market Effects:</strong> Rerouted Gulf Coast freight will increase demand on I-20 and I-40 corridors through Alabama and Arkansas, temporarily tightening capacity in those regions</li>
+            <li><strong>Regional Spillover Analysis:</strong> Maine severe weather clearing by July 19th will normalize Northeast operations, while New Mexico flash flooding should resolve by July 19th with minimal ongoing impact</li>
+            <li><strong>Recovery Timeline:</strong> Full operational recovery expected by Monday July 21st, with weekend freight likely experiencing 12-24 hour delays in affected regions</li>
         </ul>
     </div>
-    <div class="chart-section">
-        <div class="chart-title">📈 Diesel Price Trend (30-Day Test Data)</div>
-        <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/diesel_trend_chart_20250717_173823.png" alt="Diesel Price Trend Chart" class="chart-img">
-        <div class="url-info">Chart URL: https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/diesel_trend_chart_20250717_173823.png</div>
-    </div>
-    <div class="chart-section">
-        <div class="chart-title">⛽ AAA Regional Price Comparison (Test Data)</div>
-        <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/aaa_comparison_chart_20250717_173823.png" alt="AAA Price Comparison Chart" class="chart-img">
-        <div class="url-info">Chart URL: https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/aaa_comparison_chart_20250717_173823.png</div>
-    </div>
-    <div class="chart-section">
-        <h3>🔧 Technical Details</h3>
-        <p><strong>GitHub Repository:</strong> troubleshootme/troubleshootme.github.io</p>
-        <p><strong>Token Type:</strong> Fine-grained personal access token</p>
-        <p><strong>Chart Hosting:</strong> GitHub raw.githubusercontent.com</p>
-        <p><strong>Report Hosting:</strong> GitHub Pages</p>
-        <p><strong>Test Time:</strong> 2025-07-17 17:38:24</p>
-    </div>
+            
+    <h2>💰 Financial Market Indicators</h2>
+    <ul>
+        <li><strong>Diesel Futures:</strong> Futures markets suggest continued price stability with a slight upward bias, reflecting steady summer demand and geopolitical calm. Carriers are likely factoring in stable but elevated fuel costs for the near term.</li>
+        <li><strong>Carrier Financial Health:</strong> The market bifurcation is stressing carriers differently. Van carriers face margin compression in a soft rate environment, while flatbed and reefer carriers are capitalizing on stronger demand. Overall, rising operational costs continue to drive market consolidation.</li>
+        <li><strong>Economic Indicators:</strong> Recent warnings from global trade officials about the potential for a tariff 'cascade' effect are creating forward-looking uncertainty. While current freight volumes are strong in some sectors, this signals a potential headwind for import-related freight later in the year.</li>
+    </ul>
     
-    <div style="text-align: center; margin-top: 30px; color: #666;">
-        <p>🎉 If you can see the charts above, the integration is working perfectly!</p>
+    <h2>📰 Impactful News Analysis</h2>
+    <ol>
+    
+        <li>
+            <strong><a href="https://www.overdriveonline.com/regulations/article/15750790/dot-secretary-duffy-talks-truck-parking-selfdriving-tech-elp" target="_blank" style="color: #00adf1; text-decoration: none;">DOT Secretary Addresses Key Trucking Issues: Parking, Double Brokering, and AVs</a> 🔗:</strong><br>
+            Broker-focused insight: The continued high-level focus on combating fraudulent double-brokering reinforces the need for stringent carrier vetting and compliance protocols. This is a positive development for legitimate brokers and can be used as a selling point to customers, emphasizing ETA's commitment to secure and reliable transport.
+        </li>
+        
+        <li>
+            <strong><a href="https://www.overdriveonline.com/parking/article/15750835/dot-appropriations-bill-includes-dedicated-truck-parking-funding" target="_blank" style="color: #00adf1; text-decoration: none;">House Bill Proposes Dedicated Truck Parking Funds, Blocks Speed Limiter Mandate</a> 🔗:</strong><br>
+            Broker-focused insight: This is a significant win for carrier relations. The blocking of a speed limiter mandate avoids a potential capacity reduction and network slowdown. Use this as a positive talking point with carriers, showing an understanding of the operational issues they face. Improved parking availability will eventually lead to better driver efficiency and retention.
+        </li>
+        
+        <li>
+            <strong><a href="https://www.cnbc.com/2025/07/16/expect-tariff-cascade-effect-across-slowing-world-economy-un-warns.html" target="_blank" style="color: #00adf1; text-decoration: none;">UN Official Warns of Tariff 'Cascade' Effect on Global Economy</a> 🔗:</strong><br>
+            Broker-focused insight: This is a critical strategic insight for customer conversations. It provides a basis for discussing potential future market volatility and softening import volumes. Advise customers to prepare for fluctuating demand and position ETA as a partner that can help navigate this uncertainty.
+        </li>
+        
+        <li>
+            <strong><a href="https://www.supplychaindive.com/news/la-z-boy-supply-chain-redesign-century-vision-finances/752772/" target="_blank" style="color: #00adf1; text-decoration: none;">Major Furniture Retailer Overhauling Distribution Network to Cut Costs</a> 🔗:</strong><br>
+            Broker-focused insight: This is a direct signal of shifting freight patterns in the retail sector. Proactively engage with furniture and large-format retail customers to understand if they are planning similar network redesigns. This can uncover new, high-volume lane opportunities and position ETA as a strategic partner.
+        </li>
+        </ol>
+    <div class="second-layer-enhancement">
+        <h4>News Impact Timeline</h4>
+        <ul>
+            <li><strong>Immediate Operational Reality:</strong> DOT's double-brokering focus creates immediate opportunity for legitimate brokers to emphasize security and compliance in customer conversations</li>
+            <li><strong>3-Day Market Implications:</strong> Speed limiter mandate blocking will improve carrier sentiment and potentially increase equipment availability as carriers avoid defensive capacity reductions</li>
+            <li><strong>Week-Ahead Positioning:</strong> Truck parking funding news provides positive talking points for carrier relationship building and may improve driver retention rates</li>
+            <li><strong>Regulatory Compliance Impacts:</strong> Enhanced fraud prevention measures will require continued investment in carrier vetting but create competitive advantage for compliant brokers</li>
+        </ul>
     </div>
-</body>
-</html>
+        
+    <h2>🔍 Competitive Intelligence</h2>
+    <ul>
+        <li><strong>Digital Load Board Trends:</strong> Real-time load board intelligence shows extremely high volume, particularly in the flatbed sector with over 37,000 loads. The narrow gap between posted and paid rates across all equipment types indicates a highly transparent and efficient spot market, where initial rate postings are very close to final negotiated prices.</li>
+        <li><strong>Capacity Alerts:</strong> Capacity is tightest for reefer equipment, especially for loads originating in seasonal produce regions. Van capacity is loose nationwide, particularly in the Northeast. Flatbed capacity is abundant but in high demand, creating a balanced-but-busy market, especially in the Southeast.</li>
+        <li><strong>Technology Disruptions:</strong> The industry continues to accelerate its adoption of digital freight matching and visibility platforms. The focus is on improving asset utilization and operational efficiency to combat rising costs. Brokers who leverage technology for faster booking and real-time tracking have a distinct competitive advantage.</li>
+    
+    </ul>
+    <div class="second-layer-enhancement">
+        <h4>Demand Shift Indicators</h4>
+        <ul>
+            <li><strong>Regional Demand Predictions:</strong> Southeast flatbed demand will remain elevated through next week as construction activity continues, while van capacity surplus should persist until seasonal retail freight increases in early August</li>
+            <li><strong>Seasonal Transition Analysis:</strong> Current reefer demand is showing signs of moderating from peak seasonal levels, with the narrowing premium between posted and paid rates indicating we may be past the absolute peak produce season</li>
+            <li><strong>Economic Leading Indicators:</strong> The tariff cascade warnings suggest import-related van freight may soften further in coming weeks, potentially deepening the current capacity surplus</li>
+            <li><strong>Capacity Flow Predictions:</strong> Equipment will continue flowing toward Southeast flatbed markets and away from van freight, creating a bifurcated market through month-end</li>
+        </ul>
+    </div>
+    <ul style="display: none;">
+        </ul>
+    <h2>👥 Customer Sector Analysis</h2>
+    <ul>
+        <li><strong>Retail:</strong> Demand from the retail sector is generally soft, with a focus on cost-cutting through network optimization, as seen in recent news. Back-to-school freight is providing some seasonal lift, but overall volumes are modest.</li>
+        <li><strong>Manufacturing:</strong> Industrial and manufacturing output remains strong, serving as the primary driver for the robust flatbed market. This demand is concentrated in the Southeast and Midwest manufacturing belts.</li>
+        <li><strong>Agriculture:</strong> Seasonal produce shipments continue to drive elevated reefer demand. Key regions include California, the Pacific Northwest, and the Midwest. While still a primary market driver, the absolute peak may have passed, leading to slightly more stable conditions.</li>
+        <li><strong>Automotive:</strong> The automotive sector is providing steady, consistent freight volumes. However, this sector is highly sensitive to broader economic shifts, and any downturn resulting from trade disputes would impact this freight almost immediately.</li>
+    </ul>
+    
+    <h2>🗺️ Regional & Lane Analysis</h2>
+    <h3>📍 Primary Region Focus: Southeast US (GA, FL, AL, SC, NC, TN)</h3>
+    <p>The Southeast remains a critical hub of freight activity. It is the epicenter of the strong flatbed market, fueled by widespread construction and industrial production. Reefer capacity is tight due to produce shipments from Georgia and Florida, though outbound Florida capacity remains a challenge. Van markets in the region are balanced to loose, offering favorable rates for shippers, especially on northbound lanes out of Florida.</p>
+    
+    <h3>🛣️ Key Lane Watch</h3>
+    <ul>
+    
+        <li>
+            <strong>Atlanta, GA → Miami, FL:</strong> This high-volume corridor is seeing strong demand for both van and reefer freight to service Florida's consumer population. Reefer rates are firm due to grocery and produce demand. Van capacity is more readily available, but rates remain solid southbound. The key challenge is sourcing capacity for the return trip, as outbound Florida lanes are notoriously weak, creating a rate imbalance.
+        </li>
+        
+        <li>
+            <strong>Birmingham, AL → Houston, TX:</strong> A vital flatbed lane connecting the Southeast's industrial heartland with the energy and manufacturing sectors of Texas. Demand for flatbed and specialized equipment is consistently high. While freight is plentiful, so is carrier traffic, leading to competitive but stable rates. Brokers who can provide reliable, on-time service have an advantage over those competing solely on price.
+        </li>
+        </ul>
+    <h2>🚨 Actionable Alerts</h2>
+    <div class="alert-box">
+        <h3>Rate Spike Warnings:</h3>
+        <ul>
+    <li>Lanes impacted by flash flooding near New Orleans (I-10, I-55).</li><li>Reefer lanes originating in the Pacific Northwest and Midwest as produce seasons continue.</li><li>Any freight moving through Northern New England may see delays or cancellations due to severe weather.</li>
+        </ul>
+        <h3>Capacity Shortage Alerts:</h3>
+        <ul>
+    <li>Reefer equipment remains the most constrained asset type nationally. Localized capacity is extremely tight in Southeast Louisiana due to severe flooding.</li>
+        </ul>
+        <h3>Opportunity Zones:</h3>
+        <ul>
+    <li>Van freight originating anywhere in the country, as loose capacity provides strong negotiation leverage.</li><li>Flatbed freight in the Southeast, where high volume allows for securing multiple loads with carriers.</li><li>Backhaul lanes originating in Florida, where carriers are eager to find freight to reposition equipment.</li></ul></div>
+    <h2>🎯 Strategic Recommendations for Today</h2>
+    <div class="recommendation-box">
+        <h3>💼 For Customer Sales:</h3>
+        <p><strong>Narrative:</strong> Discuss the current market's split personality: favorable, soft conditions for van freight versus the busy, high-volume flatbed market. Use the news on potential tariff impacts to talk about future uncertainty and position ETA as a strategic partner to navigate volatility. Emphasize our commitment to secure transport by referencing the industry's focus on eliminating fraud.</p>
+        <p><strong>Action:</strong> Reach out to van shippers to lock in favorable rates. Proactively contact flatbed shippers to discuss securing capacity in a very active market. Poll retail customers about any planned distribution network changes.</p>
+    
+        <h3>🚛 For Carrier Reps:</h3>
+        <p><strong>Sourcing Focus:</strong> Prioritize sourcing reefer capacity, but note that rate pressure may be easing slightly. For flatbed, focus on the Southeast and Midwest where volume is highest. Build relationships with van carriers who may be seeking consistent freight in a soft market.</p>
+        <p><strong>Negotiation Leverage:</strong> For van loads, leverage the soft market for competitive rates. For flatbed, the high volume of available loads means you can source effectively, but the stable paid rates suggest there isn't much room for low-ball offers. Use the positive news on the blocked speed limiter mandate and new parking funds as relationship-building talking points.</p>
+    </div>
+    <h2>📞 Customer Communication Scripts</h2>
+        
+    <div class="second-layer-enhancement">
+        <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.2em;">Van Freight Rate Positioning In Soft Market</h3>
+        <p><strong>Opening Script:</strong> "Based on today's market conditions showing van rates stable at $1.85/mile with ample capacity across 17,904 available loads, we're seeing an opportunity to lock in favorable pricing for your upcoming shipments while capacity remains loose."</p>
+        <p><strong>Value Proposition:</strong> This soft van market gives us significant negotiating leverage to secure competitive rates and guaranteed capacity for your regular lanes</p>
+        <p><strong>Urgency Creator:</strong> Flatbed demand surge is pulling some drivers away from van freight, and this capacity advantage may tighten as we approach peak construction season</p>
+        <p><strong>Objection Handler:</strong> While rates are competitive now, the 37,000+ flatbed loads in the market show strong economic activity that typically leads to broader rate increases within 2-3 weeks</p>
+    </div>
+                
+    <div class="second-layer-enhancement">
+        <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.2em;">Reefer Capacity Shortage Communication</h3>
+        <p><strong>Opening Script:</strong> "Current capacity indicators show reefer rates at $2.21/mile with tight equipment availability across 7,400 loads, which means securing your produce shipments requires immediate action and premium positioning."</p>
+        <p><strong>Value Proposition:</strong> Our established carrier relationships allow us to secure reefer capacity even in this tight market, ensuring your temperature-sensitive freight moves on schedule</p>
+        <p><strong>Urgency Creator:</strong> Seasonal produce demand is still driving premium rates, and any weather disruption to current growing regions could spike rates further</p>
+        <p><strong>Objection Handler:</strong> The narrow spread between posted and paid rates shows this is market-driven pricing, not broker markup - we're seeing the same rates across all platforms</p>
+    </div>
+                
+        <h2>💡 Tony's Tip</h2>
+        <div style="background-color: #e8f4fd; border-left: 4px solid #3498db; padding: 15px; margin: 15px 0;">
+            Please let me know if you have any suggestions or ideas to enhance the value of this daily report.
+        </div>
+        
+        <h2>📅 This Day in History</h2>
+        
+            <div style="padding: 15px; margin: 15px 0;">
+                <strong>1203:</strong> The Fourth Crusade assaults Constantinople. The Byzantine emperor Alexios III Angelos flees from his capital into exile.
+            </div>
+            
+            <div style="padding: 15px; margin: 15px 0;">
+                <strong>1762:</strong> Former emperor Peter III of Russia is murdered.
+            </div>
+            
+            <div style="padding: 15px; margin: 15px 0;">
+                <strong>1968:</strong> Abdul Rahman Arif is overthrown and the Ba'ath Party is installed as the governing power in Iraq with Ahmed Hassan al-Bakr as the new Iraqi President.
+            </div>
+            
+        <h2>😄 Jokes of the Day</h2>
+        
+            <div style="padding: 15px; margin: 15px 0; font-style: italic;">
+                Schrödinger's cat walks into a bar and doesn't.
+            </div>
+                
+            <div style="padding: 15px; margin: 15px 0; font-style: italic;">
+                Which part of the hospital has the least privacy? The ICU.
+            </div>
+                
+            <div style="padding: 15px; margin: 15px 0; font-style: italic;">
+                What's the difference between England and a tea bag? The tea bag stays in the cup longer.
+            </div>
+                
