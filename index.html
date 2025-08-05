@@ -1,126 +1,34 @@
 
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
-    body { 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif; 
-        line-height: 1.6; 
-        color: #333; 
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        font-size: 1.1em;
-    }
-    h1, h2, h3 { 
-        color: #2c3e50; 
-        margin-top: 25px; 
-        margin-bottom: 15px;
-    }
-    h2 {
-        background-color: #00adf1;
-        color: white;
-        padding: 15px 20px;
-        margin: 25px 0 20px 0;
-        font-size: 1.8em;
-        font-weight: bold;
-        border-radius: 4px;
-    }
-    table { 
-        border-collapse: collapse; 
-        width: 100%; 
-        margin: 15px 0;
-        border: 1px solid #ddd;
-    }
-    th { 
-        background-color: #2c3e50;
-        color: white;
-        font-weight: bold; 
-        padding: 15px;
-        text-align: left;
-        border: 1px solid #ddd;
-        font-size: 1.1em;
-    }
-    td { 
-        padding: 15px;
-        text-align: left;
-        border: 1px solid #ddd;
-        font-size: 1.05em;
-    }
-    td.row-header { 
-        text-align: center;
-        vertical-align: middle;
-        font-weight: bold;
-    }
-    tr:nth-child(even) { 
-        background-color: #f9f9f9; 
-    }
-    .positive-change {
-        color: #27ae60;
-        font-weight: bold;
-    }
-    .negative-change {
-        color: #d62643;
-        font-weight: bold;
-    }
-    .neutral-change {
-        color: #7f8c8d;
-        font-weight: bold;
-    }
-    ul, ol { 
-        margin: 15px 0; 
-        padding-left: 25px;
-        font-size: 1.05em; 
-    }
-    li { 
-        margin: 10px 0;
-        line-height: 1.7; 
-    }
-    strong { color: #2c3e50; }
-    .alert-box {
-        background-color: #fff3cd;
-        border: 1px solid #ffeaa7;
-        border-radius: 4px;
-        padding: 15px;
-        margin: 15px 0;
-    }
-    .recommendation-box {
-        background-color: #e8f5e8;
-        border: 1px solid #c3e6c3;
-        border-radius: 4px;
-        padding: 15px;
-        margin: 15px 0;
-    }
-    /* Second layer enhancement styling */
-    .second-layer-enhancement {
-        background-color: #fdfdfd;
-        border: 1px solid #e8e8e8;
-        border-left: 3px solid #d62643;
-        border-radius: 6px;
-        padding: 16px;
-        margin: 12px 0;
-        box-shadow: 0 2px 4px rgba(214, 38, 67, 0.08);
-        position: relative;
-    }
-    /* Predictive Analytics badge removed for better mobile viewing */
-    /*
-    .second-layer-enhancement::before {
-        content: "Predictive Analytics";
-        position: absolute;
-        top: 8px;
-        right: 12px;
-        background: linear-gradient(45deg, #d62643, #ff6b7a);
-        color: white;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 0.8em;
-        font-weight: 500;
-    }
-    */
-    .second-layer-enhancement h4 {
-        margin-top: 0;
-        color: #d62643;
-        font-weight: 600;
-        font-size: 1.3em;
-    }
+
+:root{--brand:#00adf1;--heading:#2c3e50;--ok:#27ae60;--bad:#d62643;--mid:#7f8c8d;--bg:#0b1117;--panel:#101823;--panel-2:#0d141e;--text:#e6eef6;--muted:#a8b3bf;--border:#1f2a36}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,Arial,sans-serif;line-height:1.7;background:var(--bg);color:var(--text)}
+.wrapper{max-width:1000px;margin:0 auto;padding:22px 16px}
+.header{text-align:center;margin-bottom:22px}
+.header .logo{max-width:300px;height:auto;filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.header h1{font-size:2.4rem;margin:14px 0 6px 0;font-weight:700;letter-spacing:.2px}
+.header .meta{color:var(--muted)}.header .stamp{font-size:.95rem;color:var(--muted)}
+.band{background:var(--panel-2);color:#fff;padding:14px 18px;margin:26px 0 16px 0;font-size:1.2rem;font-weight:700;border-left:4px solid var(--brand);border:1px solid var(--border);border-radius:6px}
+.section{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px}
+.section+.section{margin-top:14px}
+.second-layer-enhancement{background:linear-gradient(180deg,#0d1420,#0e1621);border:1px solid var(--border);border-left:3px solid var(--bad);border-radius:10px;padding:16px}
+.second-layer-enhancement h4{margin:0 0 6px 0;color:#fff}
+.table{border-collapse:collapse;width:100%;margin:10px 0;border:1px solid var(--border)}
+.table th{background:#132033;color:#fff;font-weight:700;padding:14px;text-align:left;border:1px solid var(--border)}
+.table td{padding:14px;border:1px solid var(--border)}
+.table tr:nth-child(even){background:rgba(255,255,255,.02)}
+.row-header{text-align:center;font-weight:700;color:#eaf2f8}
+.positive-change{color:var(--ok);font-weight:700}.negative-change{color:var(--bad);font-weight:700}.neutral-change{color:var(--mid);font-weight:700}
+.alert-box{background:rgba(255,243,205,.08);border:1px solid #ffeaa733;border-radius:8px;padding:14px}
+.recommendation-box{background:rgba(40,167,69,.09);border:1px solid #2ecc7133;border-radius:8px;padding:14px}
+.figure{border:1px solid var(--border);border-radius:8px;overflow:hidden;background:#0c1219}
+.figure img{width:100%;display:block}
+.footer{color:var(--muted);text-align:center;margin:24px 0 10px 0;font-size:.9rem}
+hr.sep{border:none;border-top:1px solid var(--border);margin:18px 0}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+
     </style>
     
     <div style="text-align: center; margin-bottom: 30px;">
@@ -129,10 +37,10 @@
              style="max-width: 300px; height: auto; margin-bottom: 20px;"></a>
     </div>
     <h1 style="text-align: center; font-size: 3.2em;">📊 Daily Market Intelligence Report</h1>
-    <p style="text-align: center;"> Tuesday, August 05, 2025</p>    <p style="text-align: center; font-size: 0.9em;">3:18 PM CST</p>    <hr>
+    <p style="text-align: center;"> Tuesday, August 05, 2025</p>    <p style="text-align: center; font-size: 0.9em;">3:55 PM CST</p>    <hr>
     
     <h2>📊 Top-Line Summary</h2>
-    <p>The national freight market is defined by significant regional volatility, creating distinct opportunities for agile brokers. While national load volumes show stability, extreme weather is bifurcating the market. A persistent, dangerous heatwave across the Southwest is severely constraining reefer capacity and inflating rates. Concurrently, widespread flood warnings and watches throughout the Southeast are disrupting supply chains, tightening van and flatbed capacity, and creating a surge in urgent spot freight. Carrier negotiating power is increasing, evidenced by paid rates consistently exceeding posted rates across van and reefer segments. Brokers must focus on these weather-impacted regions to capitalize on rate premiums and capacity imbalances, while also navigating new regulatory headlines concerning ELD compliance and broker transparency.</p>
+    <p>The national freight market continues in a holding pattern, characterized by overall stable load volumes but significant regional volatility driven by severe weather. Widespread flooding across the Southeast is causing major operational disruptions, tightening capacity and creating urgent, high-margin spot opportunities. Concurrently, an intense heatwave in the Southwest continues to constrain reefer availability and drive up rates. A key indicator of shifting market power is the persistent trend of paid rates exceeding posted rates for both van and reefer equipment, signaling that carriers hold negotiating leverage in these critical segments. Brokers must focus on navigating the weather-disrupted regions to capitalize on rate premiums while managing customer expectations regarding delays and increased costs.</p>
     
     <h2>📈 National Data Dashboard</h2>
     <table>
@@ -140,27 +48,27 @@
     
             <tr>
                 <td class="row-header">Vans</td>
-                <td colspan="2">The van market is firming as post-holiday rate slides have officially ended. Current data shows the average paid rate at $1.86/mile, surpassing the posted average of $1.82/mile, which confirms that carriers hold pricing power and are rejecting low-ball offers. With 22,170 loads available, demand is steady, but capacity is being squeezed in key regions like the Southeast due to flood risks, making it harder to secure trucks. Brokers must adjust quotes upward to align with the higher paid rates and anticipate tighter capacity on weather-impacted lanes.</td>
+                <td colspan="2">The van market is exhibiting clear signs of tightening, as the average paid rate of $1.87/mile now exceeds the average posted rate of $1.81/mile. This inversion, despite relatively stable load counts with 21,849 available loads, indicates that capacity is being absorbed and carriers are successfully rejecting initial offers, forcing brokers to increase bids to secure trucks. This dynamic suggests a reduction in carrier pliability, particularly in weather-affected regions, requiring more aggressive rate strategies to cover loads.</td>
             </tr>
         
             <tr>
                 <td class="row-header">Reefers</td>
-                <td colspan="2">The reefer segment remains the most volatile and constrained, primarily due to the extreme heatwave in the Southwest. The significant spread between the average paid rate of $2.38/mile and the posted rate of $2.30/mile highlights the premium carriers are demanding to operate in hazardous conditions. With only 10,698 loads available nationally, equipment is scarce, especially in Arizona and Southern California. Brokers must be prepared to pay significant premiums for reliable reefer capacity on lanes touching the Southwest and should be proactive in communicating these cost pressures to customers.</td>
+                <td colspan="2">Reefer remains the most constrained and volatile segment, with a significant spread between the average paid rate ($2.38/mile) and the posted rate ($2.27/mile). With only 10,313 loads available, this premium is fueled by dual weather crises: extreme heat in the Southwest stressing equipment and drivers, and flooding in the Southeast disrupting produce shipments. This environment gives reefer carriers considerable pricing power, making it essential for brokers to quote at premium levels to secure scarce capacity for temperature-sensitive freight.</td>
             </tr>
         
             <tr>
                 <td class="row-header">Flatbeds</td>
-                <td colspan="2">The flatbed market shows robust activity with 42,244 available loads, but conditions are tightening slightly in the carrier's favor. The average paid rate of $2.24/mile has edged above the posted rate of $2.21/mile, signaling an end to the broker-favorable market of previous weeks. While capacity is generally available, regional disruptions from flooding in the Southeast are creating localized shortages and rate pressure. Brokers should expect less room for negotiation than last week and must factor regional weather impacts into their pricing for construction and industrial freight.</td>
+                <td colspan="2">The flatbed market appears balanced and opportunity-rich, with a high volume of available loads (39,180) and identical average posted and paid rates of $2.23/mile. This equilibrium suggests that the broker-favorable rate spreads seen previously have normalized. While capacity is not overtly tight on a national level, regional disruptions, particularly from flooding impacting construction and industrial sites in the Southeast, can create localized sourcing challenges. Brokers can find ample opportunity here, but must be mindful of regional operating conditions.</td>
             </tr>
         
         <tr>
             <td class="row-header">Diesel Price</td>
-            <td colspan="2"><strong>$3.738/gal</strong> - Diesel prices have ticked up slightly to $3.738/gallon. This increase, though minor, adds to the cumulative cost pressures on carriers, reinforcing their need for higher rates to maintain profitability and making accurate fuel surcharge calculations critical for brokers.</td>
+            <td colspan="2"><strong>$3.738/gal</strong> - The national average diesel price has ticked up slightly to $3.738/gallon. This minor increase adds to carrier operating costs and reinforces margin pressure, making precise fuel surcharge calculations critical for maintaining profitability on every load.</td>
         </tr>
     
         <tr>
             <td class="row-header">OTRI Trends</td>
-            <td colspan="2">Tender rejections for reefer equipment are highest in the Southwest (AZ, CA) and will continue to climb as the heatwave persists. Expect a significant increase in rejections for all equipment types across the Southeast (GA, AL) as widespread flood watches disrupt operations and tighten regional capacity. The recent delisting of two ELD brands may also cause a short-term spike in rejections from non-compliant carriers.</td>
+            <td colspan="2">Tender rejections are highest and climbing for all equipment types in the Southeast (GA, AL) due to widespread flooding, which creates hazardous driving conditions and operational shutdowns. Expect continued high rejection rates for reefer loads out of the Southwest (AZ, CA) as extreme heat makes carriers selective. This tightening capacity in key regions gives carriers leverage to reject undesirable freight.</td>
         </tr>
     </tbody></table>
     <h2>⛽ Diesel Price Analysis</h2>
@@ -168,7 +76,7 @@
     <div style="margin-bottom: 30px;">
         <h3 style="color: #2c3e50; margin-bottom: 15px;">Price Trend Over Time</h3>
         <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/diesel_trend_chart_20250805_151823.png" 
+            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/diesel_trend_chart_20250805_155535.png" 
                  alt="Diesel Price Trend Chart" 
                  style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
         </div>
@@ -177,7 +85,7 @@
     <div style="margin-bottom: 30px;">
         <h3 style="color: #2c3e50; margin-bottom: 15px;">AAA Historical Price Comparison</h3>
         <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/aaa_comparison_chart_20250805_151824.png" 
+            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/aaa_comparison_chart_20250805_155536.png" 
                  alt="AAA Historical Price Comparison Chart" 
                  style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
         </div>
@@ -187,156 +95,160 @@
     <h3>Current Major Weather Events:</h3>
     <ul>
     
-        <li><strong>Extreme Heat Warning (Southwest US (AZ, CA)):</strong> A dangerous and prolonged heatwave with temperatures from 108-118°F continues to plague the Southwest. This severely restricts reefer capacity, increases equipment failure rates, and poses significant safety risks to drivers, leading to higher rates and potential service delays on critical freight corridors like I-10 and I-40.</li>
+        <li><strong>Widespread Flood Warnings & Watches (Southeast US (GA, AL)):</strong> Multiple, significant flood events are causing major disruptions across key freight corridors like I-75, I-95, and I-16. Flash flooding in coastal Georgia is closing roads, while broader flood warnings and watches across Georgia and Alabama are creating hazardous conditions, delaying shipments, and causing capacity to abandon the region. Expect significant operational challenges and a surge in urgent, high-premium spot freight.</li>
         
-        <li><strong>Widespread Flood Warnings & Watches (Southeast US (GA, AL)):</strong> Multiple rounds of excessive rainfall are causing significant flooding concerns across Georgia and Alabama, affecting major hubs like Atlanta. This is creating widespread operational delays, forcing route deviations, and tightening local capacity as carriers avoid high-risk areas. Expect urgent spot freight demand to rise in this region.</li>
+        <li><strong>River Flooding (Central Georgia (GA)):</strong> The Ocmulgee River near Macon is in a minor flood stage, impacting local access roads and agricultural lands. This affects the Macon GreenWay, potentially disrupting local drayage and access to facilities along the river, impacting carriers operating on routes through Bibb, Houston, Jones, and Twiggs counties.</li>
         
-        <li><strong>Minor River Flooding (Midwest US (MO, IL)):</strong> Minor flooding is occurring along the Mississippi River in Missouri and Illinois. While not a major system, this can cause localized delays for freight moving over key crossings and disrupt access to facilities in low-lying areas near the river.</li>
+        <li><strong>Extreme & Prolonged Heatwave (Southwest US (AZ, CA)):</strong> A dangerous and prolonged heatwave with temperatures up to 118°F continues to plague the Southwest. This severely strains reefer equipment, increases the risk of tire blowouts and mechanical failures, and limits driver hours of service. Reefer capacity is extremely tight, and rates on lanes originating from or passing through this region will carry a significant premium.</li>
+        
+        <li><strong>Widespread Flood Watch (Central and North Georgia (GA)):</strong> An extensive flood watch covers most of north and central Georgia. With up to 5 inches of rain already fallen and more expected, the risk of flash flooding on secondary roads and urban areas is high. This will slow freight movement and tighten capacity as carriers become hesitant to enter the region.</li>
+        
+        <li><strong>Mississippi River Flooding (Midwest (MO, IL)):</strong> Minor flooding of the Mississippi River at Louisiana, MO, is affecting a key Midwest waterway crossing. While minor, this can disrupt local and regional traffic, potentially causing short-distance reroutes for freight crossing the river in this area.</li>
         </ul>
     <div class="second-layer-enhancement">
         <h4>⛈️ Weather Impact Cascade</h4>
         <ul>
-            <li><strong>Immediate Operational Impact:</strong> Georgia flood watches are causing immediate route diversions and facility access issues, with conditions expected to persist through Wednesday based on forecast data showing continued light rain</li>
-            <li><strong>Secondary Market Effects:</strong> Freight originally destined for Atlanta is being rerouted to Charlotte and Jacksonville, creating unexpected demand spikes in these secondary markets</li>
-            <li><strong>Regional Spillover Analysis:</strong> Southeast disruption is pulling capacity from adjacent markets like Tennessee and the Carolinas, tightening availability on typically stable lanes</li>
-            <li><strong>Recovery Timeline:</strong> Alabama forecast shows clearing conditions by Thursday, but Georgia may see lingering effects into Friday based on extended light rain predictions</li>
+            <li><strong>Immediate Operational Impact:</strong> Heavy thunderstorms forecast through Wednesday morning in coastal Georgia will maintain current disruptions. Arizona temperatures remaining in upper 90s to 100°F through Thursday will continue stressing reefer operations.</li>
+            <li><strong>Secondary Market Effects:</strong> Freight normally moving through I-75 corridor will reroute through I-77 and I-81, creating temporary rate pressure in Virginia and Tennessee markets. Port of Savannah delays will increase demand for expedited service to make up lost time.</li>
+            <li><strong>Regional Spillover Analysis:</strong> As Southeast capacity remains constrained, shippers will source trucks from Carolinas and Tennessee, creating ripple effect of rate increases in markets typically insulated from Georgia weather events.</li>
+            <li><strong>Recovery Timeline:</strong> Georgia forecast shows transition to light rain by Thursday with clearing conditions. Expect 48-72 hour lag as carriers assess road conditions and begin returning to region, with normal operations likely resuming by weekend</li>
         </ul>
     </div>
             
     <h2>💰 Financial Market Indicators</h2>
     <ul>
-        <li><strong>Diesel Futures:</strong> While current diesel prices are relatively stable, ongoing global geopolitical tensions and refinery capacity constraints suggest that the risk of future price volatility remains high. Carriers are operating with the expectation that fuel costs could rise, influencing their rate negotiation strategies.</li>
-        <li><strong>Carrier Financial Health:</strong> Preliminary Class 8 orders for July were exceptionally low at 12,700 units, indicating carriers are delaying fleet expansion and capital investment amid market uncertainty. This, combined with the recent FMCSA delisting of two ELD providers, suggests the carrier base could shrink marginally, tightening long-term capacity.</li>
-        <li><strong>Economic Indicators:</strong> The recent narrowing of the U.S. trade gap, driven by a retreat in imports, may signal a future softening of demand for freight related to inbound port activity. Brokers should monitor this trend, as it could impact drayage and warehouse volumes in the coming months.</li>
+        <li><strong>Diesel Futures:</strong> Diesel futures are likely to remain stable with a slight upward pressure. While broad market demand is steady, regional disruptions from weather could create localized price spikes and add volatility to the forecast.</li>
+        <li><strong>Carrier Financial Health:</strong> Carriers are demonstrating capital discipline, reflected in low new Class 8 truck orders. This caution, combined with operational hurdles like the sudden decertification of two ELD providers, suggests carriers are focused on maximizing yield on existing assets rather than expansion, which will keep capacity tight.</li>
+        <li><strong>Economic Indicators:</strong> The freight market's 'holding pattern' mirrors broader economic sentiment, with steady but not surging demand. Shippers are cautious, leading to a competitive environment where brokers must demonstrate value beyond price.</li>
     </ul>
     
     <h2>📰 Impactful News Analysis</h2>
     <ol>
     
         <li>
-            <strong><a href="https://truckdriversus.com/walker-and-sr-elds-removed-from-fmcsas-approved-list-heres-what-drivers-need-to-do/" target="_blank" style="color: #00adf1; text-decoration: none;">FMCSA Delists Two ELD Brands, Posing Compliance Risk for Affected Carriers</a> 🔗:</strong><br>
-            Carriers using Walker and SR ELDs are now out of compliance and have 60 days to replace them. This creates an immediate operational risk. Brokers should proactively verify the ELD status of their carriers, especially smaller fleets, as this could temporarily remove a segment of capacity from the market until they can switch providers.
+            <strong><a href="https://www.freightwaves.com/news/freight-markets-holding-pattern-continues-in-july" target="_blank" style="color: #00adf1; text-decoration: none;">Freight Market Remains in 'Holding Pattern' Through July</a> 🔗:</strong><br>
+            The market is stable, not collapsing or surging. This means brokers must fight for every load and focus on operational excellence and strengthening carrier relationships. In a flat market, service and reliability become key differentiators for winning and retaining customer business.
         </li>
         
         <li>
-            <strong><a href="https://truckstop.com/blog/proposed-broker-transparency-rule-carriers-and-brokers/" target="_blank" style="color: #00adf1; text-decoration: none;">Proposed Broker Transparency Rule Gains Traction, May Impact Rate Negotiations</a> 🔗:</strong><br>
-            The ongoing discussion around a new broker transparency rule is a critical talking point for carrier relations. If enacted, it could require brokers to share transaction details with carriers. This reinforces the need for fair, defensible margins and transparent communication to build long-term carrier partnerships.
+            <strong><a href="https://truckdriversus.com/walker-and-sr-elds-removed-from-fmcsas-approved-list-heres-what-drivers-need-to-do/" target="_blank" style="color: #00adf1; text-decoration: none;">Two ELD Providers Removed from FMCSA Approved List, Forcing Carrier Scramble</a> 🔗:</strong><br>
+            This is an immediate sourcing opportunity. Carrier reps should proactively identify and contact carriers using Walker or SR ELDs. These carriers are now under pressure to find a new provider and may be highly receptive to reliable brokers offering consistent freight to help them manage the transition and associated costs.
         </li>
         
         <li>
-            <strong><a href="https://www.ajot.com/news/ftr-reports-preliminary-north-american-class-8-net-ordersfor-july-totaled-12700-units" target="_blank" style="color: #00adf1; text-decoration: none;">July Class 8 Orders Remain Low, Signaling Continued Carrier Caution</a> 🔗:</strong><br>
-            Extremely low new truck orders indicate that carriers are not expanding their fleets, bracing for a potentially soft market ahead. For brokers, this means the overall pool of available trucks is unlikely to grow, which will amplify the impact of any future demand surges and keep capacity relatively tight.
+            <strong><a href="https://truckstop.com/blog/proposed-broker-transparency-rule-carriers-and-brokers/" target="_blank" style="color: #00adf1; text-decoration: none;">Proposed Broker Transparency Rule Continues to be a Major Industry Talking Point</a> 🔗:</strong><br>
+            While not yet law, the ongoing discussion around transparency is impacting carrier relationships. Brokers should use this as an opportunity to proactively communicate their value-add, including technology, service, and risk management. Building trust now will be a competitive advantage regardless of the rule's outcome.
         </li>
         
         <li>
-            <strong><a href="https://www.thetrucker.com/trucking-news/business/van-spot-rates-end-post-holiday-slide" target="_blank" style="color: #00adf1; text-decoration: none;">Van Spot Rates Stabilize, Ending Post-Holiday Decline</a> 🔗:</strong><br>
-            Recent market data confirms that the downward pressure on van rates has ceased. This signals that the market has found a floor, and the period of easy, discounted booking is over. Brokers must adjust their pricing expectations and communicate to customers that rates are now firming.
+            <strong><a href="https://www.ajot.com/news/ftr-reports-preliminary-north-american-class-8-net-ordersfor-july-totaled-12700-units" target="_blank" style="color: #00adf1; text-decoration: none;">Low July Orders for New Class 8 Trucks Signal Carrier Caution</a> 🔗:</strong><br>
+            Carriers are not expanding their fleets, which signals that capacity is unlikely to loosen in the medium term. This is a critical talking point for customers, explaining why rates are firming despite stable demand. It reinforces the need for strong shipper-broker partnerships to secure reliable capacity in a constrained market.
         </li>
         </ol>
     <div class="second-layer-enhancement">
         <h4>News Impact Timeline</h4>
         <ul>
-            <li><strong>Immediate Operational Reality:</strong> ELD delisting affects carriers immediately, with 60-day compliance window creating operational uncertainty for affected fleets</li>
-            <li><strong>3-Day Market Implications:</strong> Smaller carriers using delisted ELDs may temporarily exit the market, reducing available capacity by an estimated 2-3% in spot markets</li>
-            <li><strong>Week-Ahead Positioning:</strong> Broker transparency rule discussions will intensify carrier scrutiny of margins, requiring more defensible pricing strategies</li>
-            <li><strong>Regulatory Compliance Impacts:</strong> Carriers will prioritize compliance verification, potentially slowing onboarding of new capacity sources</li>
+            <li><strong>Immediate Operational Reality:</strong> ELD decertification creates immediate sourcing opportunities with affected carriers seeking reliable freight partners to offset compliance costs and operational disruption</li>
+            <li><strong>3-Day Market Implications:</strong> Broker transparency rule discussions will intensify carrier focus on service value over pure rate competition, favoring brokers who can articulate their operational benefits</li>
+            <li><strong>Week-Ahead Positioning:</strong> Low truck order data will become talking point for rate justification with shippers, explaining why capacity remains constrained despite stable demand levels</li>
+            <li><strong>Regulatory Compliance Impacts:</strong> Carriers affected by ELD issues will prioritize relationships with brokers offering consistent freight to help manage transition costs and maintain cash flow stability</li>
         </ul>
     </div>
         
     <h2>🔍 Competitive Intelligence</h2>
     <ul>
-        <li><strong>Digital Load Board Trends:</strong> The persistent gap between higher paid rates and lower posted rates, especially in the van and reefer segments, indicates a highly competitive market where carriers are actively rejecting initial offers. Success requires using real-time data to make firm, competitive bids rather than relying on posted averages.</li>
-        <li><strong>Capacity Alerts:</strong> Capacity is tightest for reefer equipment in the Southwest (AZ, CA) due to extreme heat. Van and flatbed capacity is becoming increasingly scarce across the Southeast (GA, AL, FL) due to widespread flood watches and resulting operational disruptions.</li>
-        <li><strong>Technology Disruptions:</strong> The sudden delisting of ELD providers by the FMCSA is a significant technological disruption, forcing carriers to scramble for compliance and potentially impacting short-term capacity. This highlights the operational importance of technology compliance in the carrier base.</li>
+        <li><strong>Digital Load Board Trends:</strong> The growing gap between posted and paid rates, especially for van and reefer, indicates that load board rates are becoming starting points for negotiation, not final prices. Brokers who rely solely on posted rates will fail to secure trucks. Success requires real-time market intelligence and the ability to bid confidently above the posted average.</li>
+        <li><strong>Capacity Alerts:</strong> Capacity is critically tight for reefers in Arizona and Southern California due to heat. All equipment types are scarce across Georgia and Alabama due to severe flooding. More abundant capacity can be found for flatbeds in the Midwest and Texas.</li>
+        <li><strong>Technology Disruptions:</strong> The decertification of ELD providers is a reminder that technology compliance is a major operational risk for carriers. This creates opportunities for brokers who partner with technologically sound carriers and can offer stability to shippers concerned about supply chain continuity.</li>
     
     </ul>
     <div class="second-layer-enhancement">
         <h4>Demand Shift Indicators</h4>
         <ul>
-            <li><strong>Regional Demand Predictions:</strong> Southeast disruption will create pent-up demand surge by Friday as weather clears, while Southwest reefer demand will remain elevated through the weekend due to persistent heat</li>
-            <li><strong>Seasonal Transition Analysis:</strong> Back-to-school freight is providing a demand floor that's preventing the typical August softening, keeping van rates more stable than historical patterns suggest</li>
-            <li><strong>Economic Leading Indicators:</strong> Low Class 8 orders (12,700 units) signal carriers expect demand softening ahead, but current weather disruptions are masking this underlying trend</li>
-            <li><strong>Capacity Flow Predictions:</strong> Equipment will flow from Florida and Carolinas toward weather-impacted areas as conditions improve, creating temporary capacity surpluses in origin markets</li>
+            <li><strong>Regional Demand Predictions:</strong> Expect surge demand in Southeast recovery freight by Thursday as flood waters recede, creating backlog pressure that will keep rates elevated through weekend. Agricultural sector showing crisis-mode demand for emergency reefer moves out of affected areas.</li>
+            <li><strong>Seasonal Transition Analysis:</strong> Back-to-school retail freight showing steady but not surging demand, indicating cautious consumer spending. This muted seasonal pattern suggests shippers will be more rate-sensitive, making service reliability the key differentiator.</li>
+            <li><strong>Economic Leading Indicators:</strong> Low Class 8 truck orders signal carriers prioritizing yield over growth, indicating capacity constraints will persist. Manufacturing showing mixed signals with power generation strength but broader industrial activity remaining muted.</li>
+            <li><strong>Capacity Flow Predictions:</strong> Equipment repositioning away from Southeast flood zones will create temporary capacity surplus in adjacent markets like Tennessee and North Carolina by mid-week, followed by return flow as conditions improve</li>
         </ul>
     </div>
     <ul style="display: none;">
         </ul>
     <h2>👥 Customer Sector Analysis</h2>
     <ul>
-        <li><strong>Retail:</strong> The stabilization of van spot rates suggests that retail freight volumes are holding steady, providing a consistent demand floor for the van market. Back-to-school and early holiday season preparations are likely contributing to this stability.</li>
-        <li><strong>Manufacturing:</strong> Strong quarterly results from major engine manufacturers like Cummins suggest that industrial and manufacturing freight demand remains healthy. This should support steady demand for flatbed and specialized equipment.</li>
-        <li><strong>Agriculture:</strong> The Southeast flooding poses a significant threat to harvests and produce transport, potentially creating urgent, high-priority loads. In the Southwest, the heatwave continues to make moving produce extremely challenging and expensive.</li>
-        <li><strong>Automotive:</strong> Automotive supply chains continue to demand just-in-time logistics. Any disruptions, such as the flooding in the Southeast where many automotive plants are located, can create immediate, high-value opportunities for brokers who can provide reliable transport.</li>
+        <li><strong>Retail:</strong> Retail freight demand is steady, consistent with the back-to-school season, but lacks the surge of previous years, reflecting cautious consumer spending.</li>
+        <li><strong>Manufacturing:</strong> The manufacturing sector shows mixed signals. While some areas like power generation components show strength, the overall slowdown in new truck orders suggests broader industrial activity is muted.</li>
+        <li><strong>Agriculture:</strong> The agricultural sector in the Southeast is in crisis mode due to flooding. This is creating a surge in high-priority, high-rate spot loads for reefers and vans to move perishable goods out of affected areas or bring in emergency supplies.</li>
+        <li><strong>Automotive:</strong> The automotive freight market remains stable, following general economic trends without significant shifts in volume or capacity.</li>
     </ul>
     
     <h2>🗺️ Regional & Lane Analysis</h2>
-    <h3>📍 Primary Region Focus: Southeast</h3>
-    <p>The Southeast is the nation's most dynamic freight region today, presenting significant opportunities for brokers. The market is not driven by simple supply and demand, but by widespread operational chaos caused by severe flood watches across Georgia and Alabama. This is creating a surge in last-minute, high-urgency spot freight as shippers' regular carriers are delayed or cancel. The disruption is causing capacity to tighten across all equipment types, pushing rates up and creating arbitrage opportunities for brokers who can find solutions.</p>
+    <h3>📍 Primary Region Focus: Southeast (Georgia, Alabama)</h3>
+    <p>The Southeast is the nation's most volatile and opportunity-rich region today. Widespread, severe flooding is causing significant operational disruption, shutting down lanes and creating hazardous conditions. This has caused carriers to reposition assets out of the area, leading to a sharp tightening of capacity for all equipment types. The result is a surge in urgent spot market activity as shippers scramble to move delayed freight.</p>
     
     <h3>🛣️ Key Lane Watch</h3>
     
-<p><strong>Atlanta, GA → Orlando, FL:</strong> <p>This high-volume consumer goods lane is currently facing significant disruption. Outbound capacity from Atlanta is constrained due to the surrounding flood watches, causing carrier delays and cancellations. Demand remains high as goods must flow into Florida, creating a classic capacity squeeze that is pushing spot rates upward.</p></p>
+<p><strong>Atlanta, GA → Savannah, GA:</strong> <p>This critical port-to-inland distribution lane is severely impacted by flash flood warnings directly on the route. Capacity is scarce as many carriers are refusing to run this lane due to safety concerns and road closures. Demand is high for urgent import/export loads.</p></p>
         
-<p><strong>Birmingham, AL → Nashville, TN:</strong> <p>This industrial lane is experiencing ripple effects from the regional weather. While not the epicenter, flood watches in Alabama are tightening local truck availability. With manufacturing and construction freight moving on this lane, any delays can be costly, increasing shipper willingness to pay for on-time service.</p></p>
+<p><strong>Birmingham, AL → Macon, GA:</strong> <p>This lane connects two major industrial and distribution hubs, both of which are under extensive flood watches. While not as acute as the coastal flooding, the persistent rain and risk of flash floods are slowing transit times and making carriers hesitant to commit to loads.</p></p>
         
     <h2>🚨 Actionable Alerts</h2>
     <div class="alert-box">
         <h3>Rate Spike Warnings:</h3>
         <ul>
-    <li>All reefer lanes originating in or destined for Arizona and Southern California.</li><li>Van and flatbed spot freight originating within a 100-mile radius of Atlanta, GA.</li>
+    <li>All lanes originating from or terminating in Georgia and Alabama.</li><li>Reefer lanes originating from Arizona and Southern California.</li>
         </ul>
         <h3>Capacity Shortage Alerts:</h3>
         <ul>
-    <li>Reefer capacity is critically tight in the Southwest. Van and flatbed capacity is tightening significantly across Georgia, Alabama, and the Florida panhandle due to severe weather.</li>
+    <li>Capacity is tightest for all equipment types in the Southeast due to flooding. Reefer capacity remains extremely scarce in the Southwest due to heat.</li>
         </ul>
         <h3>Opportunity Zones:</h3>
         <ul>
-    <li>Outbound Florida lanes offer good value as many trucks that delivered into the state are looking for loads out.</li><li>The Carolinas, which are largely avoiding the severe weather, are a good region to source capacity for Southeast loads.</li></ul></div>
+    <li>Urgent spot freight within the Southeast for brokers with weather-tolerant carriers.</li><li>Flatbed lanes in the Midwest and Texas where capacity is more readily available and rates are stable.</li></ul></div>
     <h2>🎯 Strategic Recommendations for Today</h2>
     <div class="recommendation-box">
         <h3>💼 For Customer Sales:</h3>
-        <p><strong>Narrative:</strong> Communicate proactively with customers about the severe weather in the Southeast and Southwest. Explain that this is causing unavoidable rate pressure and potential delays, but highlight our ability to secure scarce capacity through our extensive network to keep their supply chains moving.</p>
-        <p><strong>Action:</strong> Contact all customers with loads scheduled to move through Georgia or Alabama in the next 72 hours to discuss contingency plans and confirm rate adjustments.</p>
+        <p><strong>Narrative:</strong> Communicate proactively with customers about the severe weather in the Southeast. Explain that securing capacity requires rate premiums and flexibility on transit times. Frame this as a service and reliability issue, highlighting our ability to find solutions in a disrupted market.</p>
+        <p><strong>Action:</strong> Contact all customers with loads scheduled to move through GA or AL in the next 72 hours to discuss contingency plans and adjust rate expectations.</p>
     
         <h3>🚛 For Carrier Reps:</h3>
-        <p><strong>Sourcing Focus:</strong> Prioritize sourcing efforts on carriers located on the outskirts of the Southeast flood zones (e.g., TN, SC, NC, North FL). For Southwest reefer loads, focus on team drivers or carriers with proven experience in extreme heat.</p>
-        <p><strong>Negotiation Leverage:</strong> Use the ELD delisting news to initiate conversations about compliance and build trust. Acknowledge that operating costs are high and be prepared to meet carriers at firm, competitive rates, especially in weather-impacted zones, to secure their capacity and build loyalty.</p>
+        <p><strong>Sourcing Focus:</strong> Concentrate sourcing efforts on trusted carriers in and around the Southeast. Be prepared to pay significant premiums for safe, reliable service. Simultaneously, identify carriers impacted by the ELD decertification and offer them consistent freight to build new partnerships.</p>
+        <p><strong>Negotiation Leverage:</strong> The primary leverage is guaranteed, high-paying freight for carriers willing to operate in difficult conditions. For carriers outside the weather zones, highlight our access to a stable national freight network as a reliable source of income.</p>
     </div>
     <h2>📞 Customer Communication Scripts</h2>
         
     <div class="second-layer-enhancement">
         <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.2em;">Rate Increase Justification</h3>
-        <p><strong>Opening Script:</strong> "Based on today's market conditions showing paid rates exceeding posted rates by $0.04/mile in van and $0.08/mile in reefer, we're seeing carriers reject low-ball offers and demand premiums for reliable service. This shift means the period of discounted freight is officially over."</p>
-        <p><strong>Value Proposition:</strong> We're securing capacity at current market rates to ensure your freight moves on schedule, while many brokers are still quoting outdated rates and facing rejections</p>
-        <p><strong>Urgency Creator:</strong> The gap between posted and paid rates is widening daily, especially with Southeast flooding creating urgent spot demand</p>
-        <p><strong>Objection Handler:</strong> I understand rate increases are challenging, but the alternative is service failures. Our data shows carriers are rejecting 15-20% more loads this week due to weather disruptions and compliance issues</p>
+        <p><strong>Opening Script:</strong> "Based on today's market conditions showing paid rates exceeding posted rates by $0.06/mile for van and $0.11/mile for reefer, we're seeing carriers reject initial offers and force brokers to bid higher. This means the rates you're seeing quoted are starting points, not final prices."</p>
+        <p><strong>Value Proposition:</strong> We're securing capacity at market rates while others are getting rejected, ensuring your freight moves on schedule without service failures</p>
+        <p><strong>Urgency Creator:</strong> With widespread flooding in the Southeast disrupting major corridors like I-75 and I-95, capacity is repositioning away from these key lanes, creating tightness that will spread to adjacent markets within 48-72 hours</p>
+        <p><strong>Objection Handler:</strong> The $3.738 diesel price is up from recent lows, and with carriers showing capital discipline through low truck orders, they're focused on maximizing yield per truck rather than competing on price. This isn't a broker markup - it's market reality.</p>
     </div>
                 
     <div class="second-layer-enhancement">
         <h3 style="color: #2c3e50; margin-top: 0; font-size: 1.2em;">Capacity Shortage Communication</h3>
-        <p><strong>Opening Script:</strong> "Current capacity indicators show reefer rejections spiking in the Southwest due to 108-118°F temperatures, while Southeast flood watches are forcing carriers to avoid Georgia and Alabama entirely. This is creating a perfect storm of capacity constraints."</p>
-        <p><strong>Value Proposition:</strong> Our carrier network includes teams positioned outside the weather zones who can still service these critical lanes while others are canceling</p>
-        <p><strong>Urgency Creator:</strong> Weather conditions are expected to persist through Thursday, meaning capacity will remain tight for at least 72 hours</p>
-        <p><strong>Objection Handler:</strong> While rates are higher, the cost of delayed or cancelled shipments far exceeds the premium for guaranteed capacity during weather emergencies</p>
+        <p><strong>Opening Script:</strong> "Current capacity indicators show tender rejection rates climbing across all equipment types in Georgia and Alabama due to severe flooding, while reefer rejections are spiking in Arizona and California from extreme heat. This means fewer trucks are available and those that are require premium pricing."</p>
+        <p><strong>Value Proposition:</strong> Our carrier network includes local operators willing to navigate challenging conditions, giving you access to capacity when your regular providers are declining loads</p>
+        <p><strong>Urgency Creator:</strong> The ELD decertification affecting Walker and SR providers is forcing additional carriers to focus on equipment compliance rather than taking new loads, further constraining available capacity</p>
+        <p><strong>Objection Handler:</strong> This isn't artificial scarcity - carriers are physically unable or unwilling to operate in flood zones and extreme heat. The alternative is service failures and delayed shipments that cost more than premium rates</p>
     </div>
                 
         <h2>📅 This Day in History</h2>
         
             <div style="padding: 15px; margin: 15px 0;">
-                <strong>1858:</strong> Cyrus West Field and others complete the first transatlantic telegraph cable after several unsuccessful attempts. It will operate for less than a month.
+                <strong>1735:</strong> Freedom of the press: New York Weekly Journal writer John Peter Zenger is acquitted of seditious libel against the royal governor of New York, on the basis that what he had published was true.
             </div>
             
             <div style="padding: 15px; margin: 15px 0;">
-                <strong>1914:</strong> World War I: The guns of Point Nepean fort at Port Phillip Heads in Victoria (Australia) fire across the bows of the Norddeutscher Lloyd steamer SS Pfalz which is attempting to leave the Port of Melbourne in ignorance of the declaration of war and she is detained; this is said to be the first Allied shot of the War.
+                <strong>2008:</strong> The New England Revolution win the 2008 North American SuperLiga final against the Houston Dynamo.
             </div>
             
             <div style="padding: 15px; margin: 15px 0;">
-                <strong>1939:</strong> The Thirteen Roses: Thirteen female members of the Unified Socialist Youth are executed by Francoist forces in Madrid, Spain.
+                <strong>2019:</strong> The revocation of the special status of Jammu and Kashmir (state) occurred and the state was bifurcated into two union territories (Jammu and Kashmir (union territory) and Ladakh).
             </div>
             
         <h2>😄 Joke of the Day</h2>
         
         <div style="padding: 15px; margin: 15px 0; font-style: italic;">
-            My parents raised me as an only child, which really annoyed my younger brother.
+            How do construction workers party? They raise the roof.
         </div>
             
