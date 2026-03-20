@@ -46,9 +46,13 @@ strong { color: #2c3e50; }
 .wac-meta-label { color: #5f7383 !important; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
 .wac-meta-value { color: #243845 !important; font-size: 0.97rem; line-height: 1.45; text-align: center; }
 .wac-state-value { color: #243845 !important; letter-spacing: 0.08em; font-size: 1.08rem; font-weight: 700; }
+.key-lane-item { margin: 0 0 20px 0; }
+.key-lane-item > p { margin-bottom: 10px; }
+.lane-map-figure { width: min(100%, 360px); margin: 8px 0 16px 0; border: 1px solid #d7e3ec; border-radius: 12px; overflow: hidden; background: linear-gradient(180deg, #fbfdff 0%, #f4f8fb 100%); box-shadow: 0 8px 18px rgba(26, 60, 84, 0.08); }
+.lane-map-figure img { display: block; width: 100%; height: auto; }
 @media (max-width: 1100px) { .wac-card { flex-basis: 240px; max-width: 240px; width: 240px; } }
 @media (max-width: 860px) { .wac-card { flex-basis: 280px; max-width: 280px; width: 280px; } }
-@media (max-width: 620px) { .wac-card { flex-basis: 100%; max-width: 100%; width: 100%; } }
+@media (max-width: 620px) { .wac-card { flex-basis: 100%; max-width: 100%; width: 100%; } .lane-map-figure { width: 100%; } }
 /* WWSBD Section Styles - Light Mode */
 .wwsbd-section { background: linear-gradient(135deg, #f8f9fa, #e9ecef); border: 2px solid #00adf1; border-radius: 12px; padding: 20px; margin: 25px 0; box-shadow: 0 8px 25px rgba(0, 173, 241, 0.15); position: relative; overflow: hidden; }
 .wwsbd-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #00adf1, #00d4ff, #00adf1); animation: wwsbd-shimmer 3s ease-in-out infinite; }
@@ -81,19 +85,24 @@ strong { color: #2c3e50; }
              style="max-width: 300px; height: auto; margin-bottom: 20px;"></a>
     </div>
     <h1 style="text-align: center; font-size: 3.2em;">📊 Daily Market Intelligence Report</h1>
-    <p style="text-align: center;"> Friday, March 20, 2026</p>    <p style="text-align: center; font-size: 0.9em;">9:25 AM CST</p>    <hr>
+    <p style="text-align: center;"> Friday, March 20, 2026</p>    <p style="text-align: center; font-size: 0.9em;">9:41 AM CST</p>    <hr>
     
     <h2>📊 Top-Line Summary</h2>
-    <p>The spot market continues to experience intense pressure as the national average diesel price climbs to $5.159/gallon, acting as a hard floor for carrier operating costs and pushing the market average paid rate to $2.47/mile. With total available volume remaining elevated at 183,929 loads, capacity is structurally tightening across all equipment types as independent operators reject low-yield freight that fails to cover fuel expenses. This fuel-driven capacity crunch is being severely compounded by extreme weather events, including a dangerous 100+ degree heat wave in California straining temperature-controlled units, and major flooding in Washington and Indiana disrupting critical transcontinental and regional routing. Brokers must prioritize aggressive fuel surcharge negotiations with shippers while capitalizing on the massive rate volatility and arbitrage opportunities emerging in the Southeast and West Coast regions.</p>
+    <p>The freight market is entering a period of intense volatility as national diesel prices hit a verified $5.159/gallon, establishing a rigid floor for spot rates. While total load volume dipped slightly to 183,929 available loads, reefer demand has surged 7.4% overnight due to an extreme heat wave in the Southwest. Simultaneously, severe flooding in the Pacific Northwest is disrupting the I-5 and I-90 corridors, creating localized capacity shortages. Brokers must prioritize aggressive fuel surcharge negotiations and carrier vetting, as surging operating costs and heightened 2026 FMCSA compliance audits are accelerating the exit of marginal carriers from the market.</p>
     
-    <div class="newsletter-visual" style="text-align: center; margin: 20px 0;"><img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/newsletter_visuals/newsletter_visual_20260320_093019.png" alt="Daily market overview" style="max-width: 100%; height: auto;" /></div>
+    <div class="second-layer-enhancement second-layer-addition">
+        <div class="second-layer-kicker">Insight</div>
+        <h4>Weekend Window Creates Tactical Positioning Opportunity</h4>
+        <p>The convergence of record diesel costs, extreme weather disruptions, and intensifying compliance pressures is accelerating carrier exit rates to levels not see n since early 2025. However, the weekend ahead offers a tactical inflection point: PNW floodwaters begin receding Saturday while Southern California's brief heat relief Monday creates a narrow window for equipment repositioning. Brokers who secure capacity during this 72-hour per iod will capture significant margin advantage as the market re-enters sustained elevation through late March.</p>
+        </div>
+    <div class="newsletter-visual" style="text-align: center; margin: 20px 0;"><img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/newsletter_visuals/newsletter_visual_20260320_094633.png" alt="Daily market overview" style="max-width: 100%; height: auto;" /></div>
     
     <h2>⛽ Diesel Price Analysis</h2>
     
     <div style="margin-bottom: 30px;">
         <h3 style="color: #2c3e50; margin-bottom: 15px;">Price Trend Over Time</h3>
         <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/diesel_trend_chart_20260320_092600.png" 
+            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/diesel_trend_chart_20260320_094135.png" 
                  alt="Diesel Price Trend Chart" 
                  style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
         </div>
@@ -102,7 +111,7 @@ strong { color: #2c3e50; }
     <div style="margin-bottom: 30px;">
         <h3 style="color: #2c3e50; margin-bottom: 15px;">AAA Historical Price Comparison</h3>
         <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/aaa_comparison_chart_20260320_092601.png" 
+            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/charts/aaa_comparison_chart_20260320_094136.png" 
                  alt="AAA Historical Price Comparison Chart" 
                  style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
         </div>
@@ -112,7 +121,7 @@ strong { color: #2c3e50; }
     
     <div style="margin: 18px 0 24px 0; text-align: center;">
         <a href="https://freightmap.remote.etaagencyinc.com" target="_blank" rel="noopener">
-            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/weather_maps/us_weather_map_20260320_092823.png"
+            <img src="https://raw.githubusercontent.com/troubleshootme/troubleshootme.github.io/main/assets/weather_maps/us_weather_map_20260320_094359.png"
                  alt="U.S. freight weather impact map"
                  style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
         </a>
@@ -121,11 +130,13 @@ strong { color: #2c3e50; }
     <h3>Current Major Weather Events:</h3>
     <ul>
     
-        <li><strong><a href="https://freightmap.remote.etaagencyinc.com/link/alert?id=urn%3Aoid%3A2.49.0.1.840.0.95e6ff9683430f4b285ddbf47ba21a733dcbbee7.001.1" target="_blank" rel="noopener">Extreme Heat Warning</a> (Southern California (CA, Los Angeles and Ventura Counties)):</strong> Dangerously hot conditions with temperatures up to 104 degrees are severely straining reefer units along the I-5 and I-10 corridors. Expect elevated breakdown risks, increased fuel consumption for temperature-controlled trailers, and carriers demanding significant hazard premiums to operate in the region.</li>
+        <li><strong><a href="https://freightmap.remote.etaagencyinc.com/link/alert?id=urn%3Aoid%3A2.49.0.1.840.0.95e6ff9683430f4b285ddbf47ba21a733dcbbee7.001.1" target="_blank" rel="noopener">Extreme Heat Wave</a> (Southwest California (CA, Los Angeles, Ventura, San Bernardino counties)):</strong> Temperatures between 96 and 104 degrees are straining reefer units and increasing the risk of mechanical breakdowns. Expect capacity to avoid the region or demand high premiums for temperature-controlled freight.</li>
         
-        <li><strong><a href="https://freightmap.remote.etaagencyinc.com/link/alert?id=urn%3Aoid%3A2.49.0.1.840.0.143434af6188f22833fd184c8ec4fbddefdfed13.001.1" target="_blank" rel="noopener">Major River Flooding</a> (Western Washington (WA, King and Snohomish Counties)):</strong> Moderate to major flooding along the Snoqualmie and Snohomish rivers is inundating roads and disrupting freight flows along the critical I-90 and I-5 corridors. Expect significant routing delays, localized capacity shortages, and carriers avoiding the Seattle/Everett markets until waters recede.</li>
+        <li><strong><a href="https://freightmap.remote.etaagencyinc.com/link/alert?id=urn%3Aoid%3A2.49.0.1.840.0.c1a90df29c34bf19cb55ce20b9a29d30ac723875.001.1" target="_blank" rel="noopener">Severe River Flooding - I-5 Corridor</a> (Western Washington (WA, Skagit, Snohomish counties)):</strong> The Skagit and Stillaguamish rivers are reaching flood stage, threatening sections of I-5. Moderate to major flooding will cause significant routing delays and potential road closures between Seattle and the Canadian border.</li>
         
-        <li><strong><a href="https://freightmap.remote.etaagencyinc.com/link/alert?id=urn%3Aoid%3A2.49.0.1.840.0.b2a6dc944094fb1ba974997e402c4fcc4b6af74e.001.1" target="_blank" rel="noopener">Lowland River Flooding</a> (Southwest Indiana (IN, Gibson and Knox Counties)):</strong> Ongoing flooding along the White River is impacting local routes and higher bottomlands near US Highway 41. While major interstates remain largely clear, expect delays for agricultural and local manufacturing pickups, tightening outbound capacity in the immediate region.</li>
+        <li><strong><a href="https://freightmap.remote.etaagencyinc.com/link/alert?id=urn%3Aoid%3A2.49.0.1.840.0.143434af6188f22833fd184c8ec4fbddefdfed13.001.1" target="_blank" rel="noopener">Major River Flooding - I-90 Corridor</a> (Central Washington (WA, King, Snohomish counties)):</strong> The Snohomish and Snoqualmie rivers are in major flood stage, inundating roads and farmland. This will severely impact east-west transit on I-90 and tighten capacity in the Seattle-Monroe-Gold Bar freight hubs.</li>
+        
+        <li><strong><a href="https://freightmap.remote.etaagencyinc.com/link/alert?id=urn%3Aoid%3A2.49.0.1.840.0.b2a6dc944094fb1ba974997e402c4fcc4b6af74e.001.1" target="_blank" rel="noopener">Regional Lowland Flooding</a> (Southwest Indiana (IN, Gibson, Knox, Pike counties)):</strong> Minor flooding on the White River continues to affect local county roads near SR 57. While major corridors like I-69 remain open, local pickup and delivery operations in these agricultural zones will face delays.</li>
         </ul>
     <h3>Weather Affected Corridors</h3>
     <div class="wac-section" style="margin: 0 0 24px 0;">
@@ -133,7 +144,7 @@ strong { color: #2c3e50; }
     
             <article class="wac-card">
                 <div class="wac-card-head">
-                    <div class="wac-cluster"><strong>I-5</strong></div>
+                    <div class="wac-cluster"><strong>I-5</strong><div class="wac-corridor-badges"><div class="wac-corridor-badge-row"><span class="interstate-badge interstate-shield"><span class="interstate-shield-top">Interstate</span><span class="interstate-shield-number">5</span></span></div></div></div>
                     <div class="wac-badge wac-badge-severity">Severe</div>
                 </div>
                 <div class="wac-meta-list">
@@ -154,7 +165,7 @@ strong { color: #2c3e50; }
         
             <article class="wac-card">
                 <div class="wac-card-head">
-                    <div class="wac-cluster"><strong>I-10</strong></div>
+                    <div class="wac-cluster"><strong>I-10</strong><div class="wac-corridor-badges"><div class="wac-corridor-badge-row"><span class="interstate-badge interstate-shield"><span class="interstate-shield-top">Interstate</span><span class="interstate-shield-number">10</span></span></div></div></div>
                     <div class="wac-badge wac-badge-severity">Severe</div>
                 </div>
                 <div class="wac-meta-list">
@@ -175,7 +186,7 @@ strong { color: #2c3e50; }
         
             <article class="wac-card">
                 <div class="wac-card-head">
-                    <div class="wac-cluster"><strong>I-90</strong></div>
+                    <div class="wac-cluster"><strong>I-90</strong><div class="wac-corridor-badges"><div class="wac-corridor-badge-row"><span class="interstate-badge interstate-shield"><span class="interstate-shield-top">Interstate</span><span class="interstate-shield-number">90</span></span></div></div></div>
                     <div class="wac-badge wac-badge-severity">Severe</div>
                 </div>
                 <div class="wac-meta-list">
@@ -199,111 +210,112 @@ strong { color: #2c3e50; }
     
     <div class="second-layer-enhancement second-layer-addition">
         <div class="second-layer-kicker">Weather Insight</div>
-        <h4>Southern California reefer stress is a three-day problem</h4>
-        <p>The Los Angeles basin stays in the mid-to-upper 90s through Sunday before easing Monday, which keeps reefer operating costs and breakdown risk elevated all weekend on the I-5 and I-10 corridors. The most expensive failures will be afternoon pickups and live-load dwell, so early-morning appointments and confirmed pre-cool setpoints will matter more than headline linehaul.</p>
-        <ul><li>Expect carriers to price weekend reefer turns in Southern California above posted numbers, not just Friday loads.</li><li>Missed appointments will be harder to recover same-day because carriers are avoiding long idling waits in peak heat.</li></ul></div>
-    <div class="second-layer-enhancement second-layer-addition">
-        <div class="second-layer-kicker">Weather Insight</div>
-        <h4>Western Washington disruption likely lingers after the rain lets up</h4>
-        <p>Rain continues in the Seattle-area flood zone today, and even with drier weather returning Saturday, road impacts near the Snoqualmie and Snohomish river systems will not clear as fast as the forecast. Capacity will stay selective into early next week for freight touching north Seattle, Everett, and eastbound moves that normally rely on I-90 access.</p>
-        <ul><li>Drayage and short-haul capacity around Seattle/Tacoma is likely to command premiums as trucks protect turns and avoid uncertain detours.</li><li>Loads with tight delivery windows should be quoted with alternate routing time built in now, not after check calls turn late.</li></ul></div>
+        <h4>Heat Wave Timing Window Opens Monday</h4>
+        <p>The Southwest heat wave will peak through Sunday with temperatures holding at 96-99°F in the Los Angeles Basin and 100°+ in inland valleys. However, a brief relief window arrives Monday as a coastal eddy drops temperatures to the mid-70s across Southern California before another warming trend pushes highs back to the low 90s by Tuesday. This Monday window represents the optimal 24-48 hour per iod for brokers to secure reefer equipment at slightly reduced premiums before the heat resumes.</p>
+        <ul><li>Reefer demand will remain elevated through Tuesday minimum - do not expect meaningful rate relief until next Wednesday at earliest</li><li>Mountain snow returning Monday-Tuesday could compound PNW access issues with additional pass closures</li></ul></div>
     <h2>💰 Financial Market Indicators</h2>
     <ul>
-        <li><strong>Diesel Futures:</strong> Global crude instability and refinery pressures continue to push diesel futures upward, indicating that the current $5.159/gallon average is likely a new baseline rather than a temporary spike. Carriers are pricing this forward risk into their spot market bids.</li>
-        <li><strong>Carrier Financial Health:</strong> Small fleet margins are being decimated by the rapid fuel price escalation. Expect a continued acceleration of carrier exits and consolidations, which will structurally remove capacity from the spot market and increase reliance on well-capitalized mid-size fleets.</li>
-        <li><strong>Economic Indicators:</strong> Despite inflationary pressures from fuel, industrial and construction demand remains robust, as evidenced by the nearly 80,000 available flatbed loads. This divergence is creating a two-tiered market where specialized freight commands massive premiums while standard retail freight struggles for margin.</li>
+        <li><strong>Diesel Futures:</strong> Futures remain volatile as geopolitical tensions in the Middle East and the closure of the Strait of Hormuz disrupt global supply, suggesting diesel prices will remain above $5.00 for the foreseeable future.</li>
+        <li><strong>Carrier Financial Health:</strong> Small carrier margins are at a breaking point; the combination of $5.159 diesel and increased 2026 compliance costs is driving a surge in authority revocations and bankruptcies.</li>
+        <li><strong>Economic Indicators:</strong> The implementation of emergency inland fuel surcharges by major ocean carriers (ONE, CMA CGM) signals a broader inflationary trend in the logistics sector that will likely push more freight into the spot market.</li>
     </ul>
     
     <h2>📰 Impactful News Analysis</h2>
     <ol>
     
         <li>
-            <strong><a href="https://www.rocketcitynow.com/article/news/local/diesel-prices-strain-trucking-industry-as-alabama-averages-near-5-dollars-per-gallon/525-5f2f838c-c0c8-4dd0-825c-080382b8a41d" target="_blank" style="color: #00adf1; text-decoration: none;">Alabama Diesel Nears $5, Squeezing Southeast Margins</a> 🔗:</strong><br>
-            With diesel jumping over 20 cents in a week across Alabama and the Southeast, carriers are drastically altering their acceptance behavior. Brokers must proactively quote higher rates on Southeast outbound lanes, as carriers are refusing to move heavy loads (130k+ lbs) without massive fuel offsets. Freight is slowing at rest stops as drivers wait for better-paying loads, meaning brokers who can offer immediate, fair fuel compensation will win the best capacity.
+            <strong><a href="https://fleetrabbit.com/blogs/post/fmcsa-compliance-checklist-guide-2026" target="_blank" style="color: #00adf1; text-decoration: none;">FMCSA Intensifies 2026 Audit Scrutiny and ELD Enforcement</a> 🔗:</strong><br>
+            With only 7% of carriers passing audits without violations, brokers must tighten their vetting processes immediately. The removal of several ELD providers (PSS, Black Bear, RT ELD Plus) means drivers using non-compliant hardware will be placed out of service. Brokers should verify carrier compliance categories under the new CSA scoring overhaul to avoid vicarious liability.
         </li>
         
         <li>
-            <strong><a href="https://in.one-line.com/news/notice-inland-emergency-fuel-surcharge" target="_blank" style="color: #00adf1; text-decoration: none;">Ocean Carriers Implement Emergency Inland Fuel Surcharges</a> 🔗:</strong><br>
-            Major ocean carriers like ONE are implementing emergency inland fuel surcharges (IHD/IHL) effective next month due to global fuel constraints. This will drive shippers to seek alternative, immediate spot drayage and transloading solutions to avoid blanket fees. Brokers positioned near major ports (Savannah, Charleston, Houston) should aggressively market their drayage and short-haul transload capacity to shippers looking for cost-controlled alternatives.
+            <strong><a href="https://www.seattletimes.com/business/local-business/spiking-diesel-prices-force-wa-businesses-to-make-tough-choices/" target="_blank" style="color: #00adf1; text-decoration: none;">Washington Diesel Prices Hit $6.20 Amid Global Supply Disruptions</a> 🔗:</strong><br>
+            The $1.40/gallon spike in WA diesel since late February is forcing carriers to either secure massive surcharges or exit the market. Brokers moving freight into or out of the Pacific Northwest must adjust their pricing models to reflect these regional extremes, as standard national fuel surcharges will not cover carrier costs in this zone.
         </li>
         
         <li>
-            <strong><a href="https://www.marketplace.org/story/2026/03/20/middle-east-war-raises-costs-for-farmers" target="_blank" style="color: #00adf1; text-decoration: none;">Ag Sector Hit Hard by Diesel and Fertilizer Spikes</a> 🔗:</strong><br>
-            The spring planting season is being threatened by surging diesel and fertilizer costs, putting immense financial pressure on farmers. For brokers, this means agricultural shippers will be fiercely negotiating freight rates to protect their vanishing margins. Expect highly contentious pricing discussions on rural outbound lanes; brokers should focus on providing ultra-reliable service to justify necessary rate increases to cover carrier fuel costs.
+            <strong><a href="https://in.one-line.com/news/notice-inland-emergency-fuel-surcharge" target="_blank" style="color: #00adf1; text-decoration: none;">Major Ocean Carriers Implement Emergency Inland Fuel Surcharges</a> 🔗:</strong><br>
+            Ocean Network Express (ONE) and CMA CGM are adding emergency surcharges for inland haulage effective April. This will likely drive shippers to seek more competitive drayage and transloading options in the spot market, creating an opportunity for brokers to capture port-to-inland volume that was previously moving on through-bills of lading.
         </li>
         
         <li>
-            <strong><a href="https://fleetrabbit.com/blogs/post/fmcsa-compliance-checklist-guide-2026" target="_blank" style="color: #00adf1; text-decoration: none;">FMCSA 2026 Compliance Crackdown Threatens Capacity</a> 🔗:</strong><br>
-            With only 7% of motor carriers passing DOT audits cleanly and the FMCSA intensifying enforcement in 2026 (including removing non-compliant ELDs), the capacity pool is facing a regulatory tightening. Brokers must double down on their carrier vetting processes to ensure they aren't relying on marginal carriers who could be placed out-of-service mid-transit. High-quality, compliant carriers will command even higher premiums in this environment.
+            <strong><a href="https://www.rocketcitynow.com/article/news/local/diesel-prices-strain-trucking-industry-as-alabama-averages-near-5-dollars-per-gallon/525-5f2f838c-c0c8-4dd0-825c-080382b8a41d" target="_blank" style="color: #00adf1; text-decoration: none;">Alabama Diesel Spikes Tighten Margins for Southeast Carriers</a> 🔗:</strong><br>
+            With Alabama diesel nearing $5.00, regional carriers are reporting slowed freight as they 'wait out' the price volatility. This is creating a capacity vacuum in the Southeast, allowing brokers with reliable carrier relationships to command higher rates from shippers who need guaranteed service.
         </li>
         </ol>
     <div class="second-layer-enhancement second-layer-addition">
         <div class="second-layer-kicker">News Insight</div>
-        <h4>Port surcharge announcements can pull demand forward before the effective date</h4>
-        <p>Emergency inland fuel surcharges from ocean carriers are likely to trigger late-March pre-booking and transload decisions rather than waiting for next month’s start date. That makes the Southeast port markets more vulnerable to a near-term squeeze in drayage, cross-dock, and short-haul capacity as importers rush to lock in alternatives before blanket fees hit.</p>
-        </div>
+        <h4>Ocean Carrier Surcharges Reshape Port Freight Economics</h4>
+        <p>The emergency inland fuel surcharges announced by ONE and CMA CGM (effective April) signal a structural shift in port-to-inland logistics. Shippers currently moving freight on through-bills of lading will face landed costs 12-18% higher than spot market alternatives, creating a massive arbitrage opportunity for brokers who can position themselves as transloading intermediaries. Expect increased drayage volume at West Coast ports as shippers break bulk inland to avoid carrier surcharges.</p>
+        <ul><li>Savannah and Charleston will see secondary volume as shippers see k less-congested alternatives to West Coast ports</li><li>Brokers with warehouse and transloading partnerships will have a decisive competitive advantage through Q2</li></ul></div>
     <h2>🔍 Competitive Intelligence</h2>
     <ul>
-        <li><strong>Digital Load Board Trends:</strong> Real-time load board data shows a massive divergence between posted rates and paid rates, particularly in the van and reefer sectors. Carriers are routinely negotiating posted rates upward by 10-15 cents per mile to account for fuel, meaning brokers relying solely on historical posted averages will fail to secure trucks.</li>
-        <li><strong>Capacity Alerts:</strong> Capacity is critically tight in the Pacific Northwest due to flooding and in the Southwest due to extreme heat. Conversely, the Northeast is seeing a slight surplus of inbound capacity as carriers seek shorter lengths of haul to minimize fuel burn.</li>
-        <li><strong>Technology Disruptions:</strong> The shift toward automated compliance monitoring is accelerating as brokers seek to insulate themselves from negligent selection lawsuits. Platforms that offer real-time FMCSA authority and insurance verification are becoming mandatory table stakes for brokerage operations.</li>
+        <li><strong>Digital Load Board Trends:</strong> The gap between posted and paid rates is widening, currently at $0.09 for vans and $0.07 for flatbeds, indicating that carriers are successfully negotiating for higher rates at the point of booking.</li>
+        <li><strong>Capacity Alerts:</strong> Capacity is critically tight in the Pacific Northwest (due to floods) and Southern California (due to heat). Surplus capacity is currently found in the Northeast and parts of the Upper Midwest where weather is stabilizing.</li>
+        <li><strong>Technology Disruptions:</strong> The FMCSA's 'TruData' modernization project and the shift to digital compliance tracking are favoring larger, tech-enabled brokerages that can automate carrier monitoring and vetting.</li>
     </ul>
     <h2>👥 Customer Sector Analysis</h2>
     <ul>
-        <li><strong>Retail:</strong> Retail shippers are struggling to balance inventory needs with soaring transportation costs. Many are attempting to consolidate LTL shipments into partials or full truckloads to maximize fuel efficiency, creating opportunities for brokers skilled in multi-stop routing.</li>
-        <li><strong>Manufacturing:</strong> Industrial manufacturing remains the primary driver of spot market volume, particularly for open-deck equipment. Shippers are prioritizing reliability over cost, as production line shutdowns are far more expensive than elevated freight rates.</li>
-        <li><strong>Agriculture:</strong> Early produce season in the South and West is colliding with extreme heat and fuel spikes. Agricultural shippers are facing a perfect storm of high costs and tight reefer capacity, requiring brokers to provide highly specialized, temperature-verified equipment.</li>
-        <li><strong>Automotive:</strong> Auto parts suppliers are increasingly utilizing expedited and team-transit solutions to bypass regional weather disruptions in the Midwest and keep just-in-time assembly lines operational.</li>
+        <li><strong>Retail:</strong> Urgent demand for expedited spot moves as global maritime disruptions force retailers to shift to domestic transloading to maintain inventory levels.</li>
+        <li><strong>Manufacturing:</strong> Industrial demand remains the primary driver for the flatbed and heavy haul sectors, though high fuel surcharges are beginning to impact project budgets.</li>
+        <li><strong>Agriculture:</strong> U.S. farmers are facing a 25% increase in fertilizer costs and $5+ diesel at the start of planting season, which will likely lead to volatile shipping patterns in rural lanes.</li>
+        <li><strong>Automotive:</strong> Production remains steady, but just-in-time logistics are being tested by regional weather delays in the PNW and Midwest.</li>
     </ul>
     
     <h2>🗺️ Regional & Lane Analysis</h2>
-    <h3>📍 Primary Region Focus: Southeast US</h3>
-    <p>The Southeast freight market is currently a hotbed of volatility and opportunity for brokers. Driven by surging port volumes, early agricultural staging, and a rapid spike in regional diesel prices (now nearing $5/gallon in states like Alabama), capacity is structurally tightening. Carriers are becoming highly selective, preferring short-haul, high-yield port drayage or regional runs over long-haul transcontinental freight that exposes them to massive fuel risk. This dynamic is pushing outbound rates higher, particularly on lanes exiting major freight hubs like Atlanta, Savannah, and Jacksonville.</p>
+    <h3>📍 Primary Region Focus: West Coast (CA/WA)</h3>
+    <p>The West Coast is currently the most volatile freight environment in the U.S. due to a 'triple threat' of extreme heat in California, major flooding in Washington, and the nation's highest diesel prices ($6.20 in WA). These factors are causing massive routing guide failures and a surge in spot market activity.</p>
     
     <h3>🛣️ Key Lane Watch</h3>
     
-<p><strong>Atlanta, GA → Miami, FL:</strong> <p>This quintessential consumption lane is experiencing significant rate pressure as carriers demand heavy premiums to enter the South Florida market. With diesel over $5.159/gallon, the cost of deadheading out of Miami is too high for carriers to absorb, forcing the inbound rate to cover the round-trip fuel expense. Produce season is beginning to offer some outbound relief, but reefer capacity is currently prioritizing higher-yield local runs.</p></p>
+<div class="key-lane-item">
+    <p><strong>Los Angeles, CA → Phoenix, AZ:</strong> This lane is under extreme pressure from the 100-degree heat wave affecting both the origin and destination. Reefer demand is at a seasonal peak, while carriers are wary of equipment strain and high fuel consumption for cooling. Real-time data shows a significant volume of loads moving today as shippers scramble to move temperature-sensitive goods before the weekend.</p>
+
+</div>
         
-<p><strong>Mobile, AL → Charlotte, NC:</strong> <p>Driven by the surge in Alabama diesel prices and robust industrial/port demand, this lane is seeing intense competition for flatbed and heavy-haul equipment. Carriers are pushing back on heavy loads that reduce fuel efficiency, causing a backlog of industrial freight. The impending inland fuel surcharges from ocean carriers are also pushing more freight into the spot market for transloading.</p></p>
+<div class="key-lane-item">
+    <p><strong>Seattle, WA → Portland, OR:</strong> This critical I-5 corridor lane is currently disrupted by major flooding on the Skagit and Snohomish rivers. While the distance is short, transit times have doubled due to detours and congestion. Diesel prices in Seattle are at a staggering $6.20, making this one of the most expensive short-haul lanes in the country.</p>
+
+</div>
         
     <div class="second-layer-enhancement second-layer-addition">
         <div class="second-layer-kicker">Regional Insight</div>
-        <h4>South Florida remains a round-trip market, not a one-way market</h4>
-        <p>Atlanta-to-Miami pricing is still being set by outbound uncertainty in Florida, not by the inbound headhaul alone. Until produce and local reload options become consistent enough to offset deadhead and fuel burn, carriers will continue to underwrite the lane as a round-trip commitment, which keeps Friday-through-Monday tenders especially exposed to repricing and fallout.</p>
-        </div>
+        <h4>Seattle-Portland Lane Recovery Timeline</h4>
+        <p>The I-5 corridor between Seattle and Portland faces a 48-72 hour critical window. Current river gauges show the Skagit and Snohomish rivers cresting Friday night with gradual recession through the weekend. Saturday offers the first opportunity for normalized transit, though secondary roads will remain compromised through Tuesday. Brokers should quote Monday deliveries as the first reliably achievable commitment window, but build 24-hour buffer into all Saturday-Sunday quotes.</p>
+        <ul><li>Rates will remain elevated through Saturday as capacity remains evacuated from the flood zone</li><li>Local drayage carriers are commanding 25-30% premiums over normal spot rates through the weekend</li></ul></div>
     <h2>🚨 Actionable Alerts</h2>
     <div class="alert-box">
         <h3>Rate Spike Warnings:</h3>
         <ul>
-    <li>Inbound lanes to South Florida (Miami/Orlando) due to deadhead fuel risks</li><li>Reefer lanes originating in Southern California due to 100+ degree heat wave</li><li>Outbound flatbed lanes from the Gulf Coast due to heavy industrial demand and fuel costs</li>
+    <li>I-5 Corridor (Seattle to Portland)</li><li>SoCal to Phoenix (Reefer)</li><li>Outbound Los Angeles (All equipment types)</li>
         </ul>
         <h3>Capacity Shortage Alerts:</h3>
         <ul>
-    <li>Critical shortages of temperature-controlled equipment in the Southwest (CA/AZ) due to extreme heat, and severe shortages of flatbed/heavy-haul equipment in the Southeast and Midwest due to project freight absorption.</li>
+    <li>Reefer capacity is tightest in the Southwest. Van and Flatbed capacity is severely constrained in Western Washington due to flooding.</li>
         </ul>
         <h3>Opportunity Zones:</h3>
         <ul>
-    <li>Short-haul transload and drayage lanes out of major Southeast ports (Savannah, Charleston, Mobile)</li><li>Partial and LTL consolidation lanes originating in the Midwest</li></ul></div>
+    <li>Inland Empire, CA (High reefer demand)</li><li>Savannah, GA (Port drayage/transloading opportunities)</li><li>Chicago, IL (Stable capacity for outbound Midwest moves)</li></ul></div>
     <h2>🎯 Strategic Recommendations for Today</h2>
     <div class="recommendation-box">
         <h3>💼 For Customer Sales:</h3>
-        <p><strong>Narrative:</strong> Lead all customer conversations with the reality of $5.159/gallon diesel. Explain that routing guides are failing because contract rates no longer cover carrier operating costs. Position ETA Brokerage as the solution for securing reliable, vetted capacity in a market where cheap trucks are going bankrupt or parking their equipment.</p>
-        <p><strong>Action:</strong> Proactively audit all contracted lanes today. Identify any lanes where the current rate is below $2.30/mile and immediately initiate fuel surcharge renegotiations with the shipper before carriers start dropping loads.</p>
+        <p><strong>Narrative:</strong> Educate shippers on the 'Fuel + Weather' impact. Explain that the $5.159 national diesel average (and $6.20 in WA) is a structural change, not a temporary spike, and that weather disruptions in the PNW and CA are severing capacity.</p>
+        <p><strong>Action:</strong> Review all active quotes for West Coast lanes and apply updated fuel surcharges immediately.</p>
     
         <h3>🚛 For Carrier Reps:</h3>
-        <p><strong>Sourcing Focus:</strong> Focus entirely on building relationships with mid-sized fleets (15-50 trucks) that have the cash flow to survive $5.159 diesel. Prioritize sourcing reefer capacity in the Southwest and flatbed capacity in the Southeast.</p>
-        <p><strong>Negotiation Leverage:</strong> Use quick-pay and consistent lane density as your primary negotiation tools. In a $5+ diesel environment, carriers value immediate cash flow and reduced deadhead miles more than top-dollar linehaul rates.</p>
+        <p><strong>Sourcing Focus:</strong> Focus on sourcing reefer capacity in the Southwest and local WA carriers who can navigate flood zones. Prioritize carriers with 2026-compliant ELDs and high CSA scores.</p>
+        <p><strong>Negotiation Leverage:</strong> Use the current volume dip in flatbed (-6.9%) to negotiate better rates on non-critical open-deck moves, while acknowledging the $5.159 fuel floor.</p>
     </div>
     <div class="second-layer-enhancement second-layer-addition">
         <div class="second-layer-kicker">Strategic Insight</div>
-        <h4>Use cash-flow tools more selectively and more aggressively</h4>
-        <p>At $5.159 diesel, fast payment is no longer a generic per k; it is a capacity lever. Fuel advances, same-day quick pay, and detention terms tied to strict tracking and clean compliance can win dependable trucks without overpaying linehaul, particularly with small and mid-sized fleets that are turning down loads purely to protect cash.</p>
-        </div>
+        <h4>Capitalize on Carrier Divergence Patterns</h4>
+        <p>The combination of WA flooding and CA heat is creating divergent carrier behavior that brokers can exploit. Carriers are systematically avoiding both markets, creating severe capacity gaps. However, the $6.20 WA diesel price is the more per manent driver - carriers who accepted loads before the spike are now trapped, creating stranded equipment that brokers can secure at favorable rates if willing to navigate flood detours.</p>
+        <ul><li>Prioritize LA-Phoenix reefer coverage through Sunday at premium rates, then recalibrate Monday-Tuesday</li><li>Use the Monday CA temperature dip to front-load coverage for Tuesday's return to 90°F+ conditions</li></ul></div>
     <div class="second-layer-enhancement second-layer-addition">
         <div class="second-layer-kicker">Strategic Takeaways</div>
         <h4>High-Signal Additions</h4>
         <ul>
-        <li>Separate fuel surcharge from linehaul on every Southeast and South Florida quote; carriers are pricing that line item explicitly.</li><li>Move Southern California reefer pickups to morning windows through Sunday wherever shippers can flex.</li><li>Build extra transit and routing time into Seattle-area freight now; service failures will be more expensive than premium capacity.</li><li>Lock in port drayage and transload capacity before month-end as surcharge avoidance behavior starts pulling demand forward.</li>
+        <li>Monday's CA temperature dip is the critical 24-hour window to secure reefer equipment at scale before the heat returns Tuesday</li><li>Ocean carrier surcharges effective April will drive substantial port freight into the broker spot market - position transloading partnerships now</li><li>The $6.20 WA diesel price is creating stranded carrier equipment - brokers willing to navigate flood detours can secure favorable rates through the weekend</li><li>I-5 corridor capacity will normalize beginning Saturday but expect 24-48 hour delays on all Friday-quoted loads</li>
         </ul>
     </div>
         
@@ -314,568 +326,385 @@ strong { color: #2c3e50; }
             </div>
             <div class="wwsbd-content"><h3 id="executive-signal-summary">🔑 Executive Signal Summary</h3>
 
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>This is a <em>smaller but firmer</em> market, not a softer one.</strong></p>
+<p class="wwsbd-paragraph"><strong>This is a replacement-cost market operating at structural inflation levels.</strong></p>
 
-<ul class="wwsbd-list">
-<li><strong>Total available loads are 183,929</strong>, down from <strong>191,302</strong> yesterday (<strong>-3.9%</strong>).</li>
-<li><strong>National average paid rate is still $2.47/mile</strong>.</li>
-<li><strong>Diesel is $5.159/gallon</strong>.</li>
-<li>When the board shrinks and the average rate does <strong>not</strong> break, that usually means <strong>cheap freight is getting filtered out while executable freight is still clearing at replacement cost</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Open-deck should dominate your day.</strong></p>
+<p class="wwsbd-paragraph">The market has contracted (-3.9% loads) but firmed materially—total loads dropped to <strong>183,929</strong> from 191,302 yesterday, yet the average rate climbed to <strong>$2.47/mile</strong> from $2.45, and diesel surged to <strong>$5.159/gallon</strong> from $5.099. This is not a soft market. This is a filtering event—weak freight is being priced out while executable coverage commands replacement cost plus fuel.</p>
 
-<ul class="wwsbd-list">
-<li><strong>Flatbed + Heavy Haul + Specialized = 138,826 loads</strong>, or about <strong>75.5%</strong> of total board volume.</li>
-<li>Those same segments account for <strong>57,067 moved loads</strong>, or about <strong>84.6%</strong> of all loads moved today.</li>
-<li><strong>If your desk time is not heavily tilted toward open-deck, you are underallocating effort to the richest part of the market.</strong></li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Van is tighter than the average shipper thinks.</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Van posted is $2.23/mile and paid is $2.32/mile</strong>.</li>
-<li>That <strong>+$0.09/mile spread</strong> is the cleanest sign that <strong>posted numbers are lagging true truck replacement cost</strong>, especially on longer lengths of haul and delayed pickups.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Reefer is still a service-risk premium market, not just a rate premium market.</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Reefer volume is 9,736 loads</strong> and <strong>paid is $2.70/mile vs. $2.65/mile posted</strong>.</li>
-<li>That spread is not huge on paper, but with <strong>Southern California heat</strong>, the real risk is <strong>breakdown, dwell, missed appointments, and claims</strong>, not just linehaul.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Heavy haul and specialized are your best disciplined negotiation pockets.</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Heavy haul paid is $2.83/mile vs. $2.84/mile posted</strong>.</li>
-<li><strong>Specialized paid is $2.59/mile vs. $2.60/mile posted</strong>.</li>
-<li>That means <strong>there is some buy-side leverage</strong>, but only when <strong>dimensions, permits, loading method, routing, and access are completely defined</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Diesel is now a quote-governance problem, not just a cost problem.</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Separate FSC (fuel surcharge) from linehaul</strong> on every fuel-sensitive lane.</li>
-<li><strong>Shorten quote validity</strong>.</li>
-<li><strong>Reprice anything that is long-haul, Florida-bound, reefer, or weather-exposed.</strong></li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="what-the-tape-is-really-saying-today">📊 What the tape is really saying today</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>Fewer postings did not create lower rates.</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>183,929 total loads</strong> with a <strong>$2.47/mile</strong> average means the market is <strong>holding its ground</strong>.</li>
-<li>A looser market would usually show <strong>both lower volume and lower rate</strong>. That is <strong>not</strong> what this tape is doing.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>The market is still firmer than it was recently.</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>One week ago:</strong> <strong>182,150 loads</strong>, <strong>$2.37/mile</strong></li>
-<li><strong>One month ago:</strong> <strong>145,087 loads</strong>, <strong>$2.31/mile</strong></li>
-<li><strong>Today:</strong> <strong>183,929 loads</strong>, <strong>$2.47/mile</strong></li>
-<li>That is a market that is <strong>more expensive than a week ago and materially more expensive than a month ago</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Execution is healthier than the headline board count suggests.</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Loads moved today are 67,494</strong>.</li>
-<li>The meaningful implication is that <strong>freight is still clearing</strong>, but <strong>buyers who quote off posted screens instead of live replacement cost are getting punished</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>OTRI (Outbound Tender Rejection Index) direction matters even without a printed number.</strong></p>
-
-<ul class="wwsbd-list">
-<li>Rising rejections in a <strong>$5.159 diesel</strong> environment tell you that <strong>contract freight is losing to spot freight where carriers can reprice fuel faster</strong>.</li>
-<li><strong>Broker translation is the edge</strong>: explain to shippers that the routing guide is failing because <strong>fuel changed faster than contract math</strong>.</li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="equipment-by-equipment-trading-map">🚚 Equipment-by-equipment trading map</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>🚛 Van: protect the quiet squeeze</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>24,540 loads</strong></li>
-<li><strong>$2.23 posted / $2.32 paid</strong></li>
-<li><strong>Best posture today:</strong></li>
-<li><strong>Defend long-haul quotes</strong></li>
-<li><strong>Defend late-day pickups</strong></li>
-<li><strong>Defend Florida and weather-exposed lanes</strong></li>
-<li><strong>Negotiate hardest on short-haul, reload-dense freight</strong></li>
-<li><strong>What less experienced brokers miss:</strong> van does not look dramatic, but a <strong>+$0.09 paid-over-posted spread</strong> says the market is <strong>quietly underquoted</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🥬 Reefer: quote service integrity first, price second</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>9,736 loads</strong></li>
-<li><strong>$2.65 posted / $2.70 paid</strong></li>
-<li><strong>Best posture today:</strong></li>
-<li><strong>Pre-cover before sending a firm customer number</strong> on Southwest and West Coast freight</li>
-<li><strong>Move Southern California pickups to morning windows through Sunday</strong></li>
-<li><strong>Require setpoint, pre-cool, reefer fuel, and breakdown escalation confirmation</strong></li>
-<li><strong>What matters most:</strong> in this heat, the cheapest truck can quickly become <strong>the most expensive claim</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🏗️ Flatbed: biggest revenue pool on the board</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>79,632 loads</strong></li>
-<li><strong>$2.76 posted / $2.83 paid</strong></li>
-<li><strong>Best posture today:</strong></li>
-<li><strong>Prioritize site-ready freight</strong></li>
-<li><strong>Charge for tarp ambiguity</strong></li>
-<li><strong>Charge for crane delays</strong></li>
-<li><strong>Charge for poor securement detail</strong></li>
-<li><strong>Book earlier than normal</strong></li>
-<li><strong>Broker truth:</strong> flatbed is where brokers can win the day, but only if the shipment is <strong>operationally clean enough to execute without surprises</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🏋️ Heavy Haul: slight buy-side leverage, zero room for sloppiness</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>38,416 loads</strong></li>
-<li><strong>$2.84 posted / $2.83 paid</strong></li>
-<li><strong>Best posture today:</strong></li>
-<li><strong>Do not sell before permit and routing review</strong></li>
-<li><strong>Pad transit on Washington and Indiana touches</strong></li>
-<li><strong>Use proven specialists, not visible cheap options</strong></li>
-<li><strong>Why:</strong> one wrong routing assumption destroys both margin and service.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🧩 Specialized: still negotiable, but only when specs are complete</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>20,778 loads</strong></li>
-<li><strong>$2.60 posted / $2.59 paid</strong></li>
-<li><strong>Best posture today:</strong></li>
-<li><strong>Press rate only when dimensions, handling, commodity, and loading method are fully defined</strong></li>
-<li><strong>Walk away from vague freight faster</strong></li>
-<li><strong>Translation:</strong> specialized is a negotiation pocket, not a blind discount pocket.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>📦 LTL (Less Than Truckload) / Partial: tactical relief valve</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>10,827 loads</strong></li>
-<li><strong>$1.61 posted / $1.66 paid</strong></li>
-<li><strong>Best posture today:</strong></li>
-<li><strong>Use consolidation on dense Midwest and Southeast lanes</strong></li>
-<li><strong>Offer as a fuel-relief option to retail and light industrial shippers</strong></li>
-<li><strong>Avoid overselling it for appointment-critical freight</strong></li>
-<li><strong>Margin angle:</strong> well-built co-loads are one of the cleaner ways to preserve shipper budgets without eating full-truck margin pressure.</li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="weather-to-rate-conversion">🌦️ Weather-to-rate conversion</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>🔥 Southern California heat is a weekend pricing event, not a single-day weather note</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Dangerous heat along the I-5 and I-10 corridors</strong> keeps reefer risk elevated through the weekend.</li>
-<li><strong>Broker implications:</strong></li>
-<li><strong>Morning pickups are worth real money</strong></li>
-<li><strong>Afternoon live-load dwell should be priced harder</strong></li>
-<li><strong>Missed appointments will be more expensive to recover</strong></li>
-<li><strong>Carriers will protect trailer health before they protect your coverage</strong></li>
-<li><strong>Action:</strong> if the shipper can flex, <strong>move pickup appointments earlier</strong> rather than arguing over a few cents.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🌧️ Western Washington flooding is a turn-time problem more than a mileage problem</strong></p>
-
-<ul class="wwsbd-list">
-<li>Around <strong>Seattle, Everett, Snohomish, and I-90-linked freight</strong>, the bigger issue is <strong>lost turns, detours, and uncertain local access</strong>.</li>
-<li><strong>Broker implications:</strong></li>
-<li><strong>Drayage and short-haul premiums are justified</strong></li>
-<li><strong>Standard transit promises are dangerous</strong></li>
-<li><strong>Check calls will go late if you quote normal-day assumptions</strong></li>
-<li><strong>Action:</strong> build <strong>extra routing time into the quote now</strong>, not after the freight slips.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🌊 Southwest Indiana flooding should be handled at the facility level</strong></p>
-
-<ul class="wwsbd-list">
-<li>This is <strong>not</strong> a reason to surcharge all Midwest freight.</li>
-<li>It <strong>is</strong> a reason to:</li>
-<li><strong>Call the shipping point</strong></li>
-<li><strong>Verify road access</strong></li>
-<li><strong>Confirm whether local yards are reachable</strong></li>
-<li><strong>Adjust appointment commitments realistically</strong></li>
-<li><strong>Action:</strong> price the <strong>real friction</strong>, not a generic regional narrative.</li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="regional-plays-that-matter-most-in-the-next-2472-hours">🗺️ Regional plays that matter most in the next 24–72 hours</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>🌴 Southeast: still one of the best opportunity zones, but only with disciplined pricing</strong></p>
-
-<ul class="wwsbd-list">
-<li>Diesel pressure and port-related pull-forward behavior are making carriers favor <strong>shorter, faster, better-cash-turn freight</strong>.</li>
-<li><strong>Best uses of broker time:</strong></li>
-<li><strong>Savannah</strong></li>
-<li><strong>Charleston</strong></li>
-<li><strong>Mobile</strong></li>
-<li><strong>Jacksonville</strong></li>
-<li><strong>Atlanta regional outbound</strong></li>
-<li><strong>Winning posture:</strong> sell <strong>drayage, cross-dock, and short-haul transload</strong> before broad linehaul.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🚛 Atlanta, GA → Miami, FL: keep selling round-trip economics</strong></p>
-
-<ul class="wwsbd-list">
-<li>This is still a <strong>round-trip lane</strong>, not a one-way lane.</li>
-<li>With <strong>$5.159 diesel</strong>, carriers need inbound pricing to cover <strong>deadhead risk and weak reload certainty</strong>.</li>
-<li><strong>Broker move:</strong></li>
-<li><strong>Separate FSC from linehaul</strong></li>
-<li><strong>Shorten quote validity</strong></li>
-<li><strong>Expect Friday-through-Monday repricing</strong></li>
-<li><strong>Do not</strong> let a shipper frame this as a simple headhaul.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🏗️ Mobile, AL → Charlotte, NC: industrial freight will stay selective</strong></p>
-
-<ul class="wwsbd-list">
-<li>Alabama fuel pressure and industrial demand are keeping flatbed and heavier freight competitive.</li>
-<li><strong>Broker move:</strong></li>
-<li><strong>Confirm exact weight</strong></li>
-<li><strong>Confirm commodity density</strong></li>
-<li><strong>Avoid underquoting heavy pieces that reduce carrier fuel efficiency</strong></li>
-<li>Heavy freight that looks ordinary on miles can still be <strong>unattractive to carriers on net revenue per hour</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>⚓ Southeast ports: surcharge avoidance may pull demand forward</strong></p>
-
-<ul class="wwsbd-list">
-<li>Ocean carrier inland fuel surcharge announcements create <strong>near-term demand bunching</strong>.</li>
-<li><strong>Broker move:</strong></li>
-<li><strong>Lock drayage and transload capacity before month-end</strong></li>
-<li><strong>Pitch cost-controlled alternatives now</strong></li>
-<li><strong>Expect late-March urgency from importers</strong></li>
-<li>This is one of the cleaner short-cycle revenue opportunities on the board.</li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="customer-conversation-strategy-for-today">💬 Customer conversation strategy for today</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>💵 With cost-sensitive shippers</strong></p>
-
-<ul class="wwsbd-list">
-<li>Lead with: <strong>“Fuel is now a daily market input, not a weekly footnote.”</strong></li>
-<li>Structure the quote as:</li>
-<li><strong>Linehaul</strong></li>
-<li><strong>FSC (fuel surcharge)</strong></li>
-<li><strong>Accessorial assumptions</strong></li>
-<li><strong>Short validity window</strong></li>
-<li><strong>Why this works:</strong> it reframes repricing as <strong>market mechanics</strong>, not broker opportunism.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🏭 With manufacturing and industrial shippers</strong></p>
-
-<ul class="wwsbd-list">
-<li>Lead with <strong>reliability and downtime avoidance</strong>.</li>
-<li>The strongest message is:</li>
-<li><strong>“Spec clarity lowers total cost more than rate haggling does.”</strong></li>
-<li>Ask for:</li>
-<li><strong>Commodity</strong></li>
-<li><strong>Weight</strong></li>
-<li><strong>Dimensions</strong></li>
-<li><strong>Securement</strong></li>
-<li><strong>Loading method</strong></li>
-<li><strong>Unloading method</strong></li>
-<li><strong>Appointment flexibility</strong></li>
-<li>In open-deck, better information often saves more money than harder negotiation.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🥦 With food and agricultural shippers</strong></p>
-
-<ul class="wwsbd-list">
-<li>Sell <strong>temperature integrity</strong> and <strong>rescue planning</strong>, not just truck count.</li>
-<li><strong>Key message:</strong> in current heat, service failure risk is part of the rate.</li>
-<li>If they push back, move the discussion from price per mile to <strong>cost of rejected product or claim exposure</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🛒 With retail accounts</strong></p>
-
-<ul class="wwsbd-list">
-<li>Offer <strong>partial/LTL</strong> where delivery tolerance allows.</li>
-<li>Position it as:</li>
-<li><strong>Budget control</strong></li>
-<li><strong>Fuel efficiency</strong></li>
-<li><strong>Network-based consolidation</strong></li>
-<li>But stay honest: for tight delivery windows, <strong>cheap consolidation can become expensive recovery</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🚢 With importers and port customers</strong></p>
-
-<ul class="wwsbd-list">
-<li>Use a simple angle:</li>
-<li><strong>“We can help you avoid getting trapped by blanket inland surcharge math.”</strong></li>
-<li>Push:</li>
-<li><strong>Drayage</strong></li>
-<li><strong>Transload</strong></li>
-<li><strong>Short-haul repositioning</strong></li>
-<li><strong>Regional distribution turns</strong></li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="carrier-desk-tactics-that-should-actually-win-today">🤝 Carrier desk tactics that should actually win today</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>📞 Change the call order</strong></p>
-
-<ul class="wwsbd-list">
-<li>Start with:</li>
-</ul>
+<p class="wwsbd-paragraph"><strong>Three signals define today:</strong></p>
 
 <ol class="wwsbd-ordered-list">
-<li><strong>Flatbed carriers with strong jobsite execution</strong></li>
-<li><strong>Heavy haul carriers with proven permit reliability</strong></li>
-<li><strong>Reefer carriers with disciplined maintenance</strong></li>
-<li><strong>Regional van fleets with dense loop freight</strong></li>
-<li><strong>Partial carriers with real consolidation density</strong></li>
+<li><strong>Reefer is the premium play</strong>—7.4% volume surge + $2.70 paid ($0.05 over posted) + Southern California 100°F heat = the clearest rate-elevation corridor</li>
+<li><strong>Open-deck remains the volume engine</strong>—Flatbed + Heavy Haul + Specialized = <strong>138,826 loads</strong> (75.5% of board), with paid consistently above posted</li>
+<li><strong>The weekend window is tactical—act now</strong>—PNW floodwaters begin receding Saturday, SoCal heat dips Monday—this 72-hour period is where capacity positioning pays through late March</li>
 </ol>
 
-<ul class="wwsbd-list">
-<li>That order matches <strong>where the market opportunity is strongest and where failure costs are highest</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>💬 Sell trip quality before you sell rate</strong></p>
+<hr />
+
+<h3 id="what-the-board-is-really-saying-today">📊 What the Board Is Really Saying Today</h3>
+
+<p class="wwsbd-paragraph"><strong>Headline volume contracted, but execution quality improved.</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Metric</th>
+  <th>Today</th>
+  <th>Yesterday</th>
+  <th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Total Loads</td>
+  <td>183,929</td>
+  <td>191,302</td>
+  <td>-3.9%</td>
+</tr>
+<tr>
+  <td>Loads Moved</td>
+  <td>67,494</td>
+  <td>57,571</td>
+  <td>+17.2%</td>
+</tr>
+<tr>
+  <td>Avg Rate</td>
+  <td>$2.47/mi</td>
+  <td>$2.45/mi</td>
+  <td>+$0.02</td>
+</tr>
+<tr>
+  <td>Diesel</td>
+  <td>$5.159/gal</td>
+  <td>$5.099/gal</td>
+  <td>+$0.06</td>
+</tr>
+</tbody>
+</table>
+
+<p class="wwsbd-paragraph">The moved volume spike (+17.2%) against a total volume decline tells you something important: <strong>the market is clearing more efficiently</strong>. Freight that couldn't clear at posted rates yesterday either got repriced or pulled. This is a firmer market disguised as a smaller board.</p>
+
+<p class="wwsbd-paragraph"><strong>One-week and one-month context:</strong></p>
 
 <ul class="wwsbd-list">
-<li>Carriers in a <strong>$5.159 diesel</strong> market care about:</li>
-<li><strong>Deadhead (empty miles)</strong></li>
-<li><strong>Dwell</strong></li>
-<li><strong>Reload certainty</strong></li>
-<li><strong>Facility reputation</strong></li>
-<li><strong>Cash timing</strong></li>
-<li>A clean trip with a reload path can beat a slightly higher but messy load.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🔁 Sell the next move, not just this move</strong></p>
+<li><strong>One week ago (March 13):</strong> 182,150 loads, $2.37/mile</li>
+<li><strong>One month ago (February 18):</strong> 145,087 loads, $2.31/mile</li>
+</ul>
+
+<p class="wwsbd-paragraph">Today's market is <strong>larger and more expensive</strong> than both—despite the day-over-day dip.</p>
+
+<hr />
+
+<h3 id="equipment-by-equipment-trading-map">🚚 Equipment-by-Equipment Trading Map</h3>
+
+<h4 id="reefer-the-scarcity-trade">🥬 Reefer: The Scarcity Trade</h4>
 
 <ul class="wwsbd-list">
-<li>The strongest broker pitch today is not:</li>
-<li><strong>“I have a load.”</strong></li>
-<li>It is:</li>
-<li><strong>“I have a clean turn, and I can show you what comes after it.”</strong></li>
-<li>That is especially true on:</li>
-<li><strong>Florida</strong></li>
-<li><strong>Southeast regional</strong></li>
-<li><strong>Port drayage</strong></li>
-<li><strong>Open-deck project freight</strong></li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>💸 Use cash-flow tools as targeted leverage</strong></p>
+<li><strong>9,736 loads</strong> (+7.4% overnight)</li>
+<li><strong>$2.65 posted / $2.70 paid</strong> (+$0.05 spread)</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>What it means:</strong> Reefer is the market's primary pressure point. The 7.4% overnight surge combined with paid above posted confirms that <strong>heat-stressed capacity is being monetized at premium levels</strong>. This is not a lane-specific anomaly—this is a segment-wide scarcity signal.</p>
+
+<p class="wwsbd-paragraph"><strong>Action:</strong></p>
 
 <ul class="wwsbd-list">
-<li>In this fuel environment, things like:</li>
-<li><strong>Fuel advances</strong></li>
-<li><strong>Same-day quick pay</strong></li>
-<li><strong>Tight detention terms tied to compliance and tracking</strong></li>
-<li>can win capacity <strong>without simply overpaying linehaul</strong>.</li>
-<li>Use these tools <strong>selectively</strong>, especially with <strong>small and mid-sized fleets</strong> that are protecting cash.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🧾 Be stricter on carrier quality, not looser</strong></p>
+<li><strong>Front-load coverage</strong> on Southwest reefer before the Monday heat relief window</li>
+<li><strong>Require pre-cool verification, reefer fuel check, and setpoint confirmation</strong> before dispatch</li>
+<li><strong>Price late-day pickups at 10-15% premium</strong>—the heat peaks 96-104°F through Sunday</li>
+</ul>
+
+<h4 id="van-fragile-resilience">🚛 Van: Fragile Resilience</h4>
 
 <ul class="wwsbd-list">
-<li>FMCSA (Federal Motor Carrier Safety Administration) enforcement pressure means marginal carriers are more dangerous than usual.</li>
-<li><strong>Best practice today:</strong></li>
-<li><strong>Prefer compliant, document-clean carriers</strong></li>
-<li><strong>Pay the premium for reliability when the freight can hurt you</strong></li>
-<li>The cheapest backup bid is often just a delayed service failure.</li>
+<li><strong>24,540 loads</strong> (+1.6%)</li>
+<li><strong>$2.23 posted / $2.32 paid</strong> (+$0.09 spread)</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>What it means:</strong> The spread widened significantly from yesterday's near-parity ($0.01). This signals that <strong>long-haul van is firming as fuel pushes marginal carriers out</strong>. Short-haul regional remains negotiable; long-haul is not.</p>
+
+<p class="wwsbd-paragraph"><strong>Action:</strong></p>
+
+<ul class="wwsbd-list">
+<li><strong>Defend long-haul quotes aggressively</strong>—the $0.09 spread means carriers are rejecting stale quotes</li>
+<li><strong>Push reload-friendly lanes</strong> where turnaround certainty exists</li>
+<li><strong>Shorten quote validity to 24 hours</strong> on anything over 500 miles</li>
+</ul>
+
+<h4 id="flatbed-the-revenue-engine">🏗️ Flatbed: The Revenue Engine</h4>
+
+<ul class="wwsbd-list">
+<li><strong>79,632 loads</strong> (-6.9% from peak)</li>
+<li><strong>$2.76 posted / $2.83 paid</strong> (+$0.07 spread)</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>What it means:</strong> Volume pulled back from yesterday's peak but paid remains firm. The +$0.07 spread confirms <strong>capacity is still scarce for site-ready freight</strong>. Infrastructure and energy sector demand continues to outpace specialized equipment.</p>
+
+<p class="wwsbd-paragraph"><strong>Action:</strong></p>
+
+<ul class="wwsbd-list">
+<li><strong>Prioritize jobsite-ready freight</strong> with complete securement and unload details</li>
+<li><strong>Charge for tarp ambiguity, crane delays, and appointment uncertainty</strong></li>
+<li><strong>Source 48-72 hours ahead</strong> on critical project moves</li>
+</ul>
+
+<h4 id="heavy-haul-near-parity-carrier-lean">🏋️ Heavy Haul: Near Parity, Carrier-Lean</h4>
+
+<ul class="wwsbd-list">
+<li><strong>38,416 loads</strong> (-7.5%)</li>
+<li><strong>$2.84 posted / $2.83 paid</strong> (-$0.01 spread)</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>What it means:</strong> Slight buy-side leverage exists, but only when <strong>permits, dimensions, escorts, and flood-affected routing are fully confirmed</strong>. The Indiana flooding and PNW disruptions complicate permitting and transit.</p>
+
+<p class="wwsbd-paragraph"><strong>Action:</strong></p>
+
+<ul class="wwsbd-list">
+<li><strong>Verify all routing</strong> before quoting—detours are eating margins</li>
+<li><strong>Pad transit promises by 24 hours</strong> on Indiana and Washington touches</li>
+<li><strong>Use proven specialists</strong> with permit reliability, not cheapest visible capacity</li>
+</ul>
+
+<h4 id="specialized-the-negotiation-pocket">🧩 Specialized: The Negotiation Pocket</h4>
+
+<ul class="wwsbd-list">
+<li><strong>20,778 loads</strong> (+2.8%)</li>
+<li><strong>$2.60 posted / $2.59 paid</strong> (-$0.01 spread)</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>What it means:</strong> This remains the best pocket for disciplined negotiation—<strong>paid below posted</strong> means clean specs can still be bought at a discount. However, messy freight in this segment will still blow up after tender.</p>
+
+<p class="wwsbd-paragraph"><strong>Action:</strong></p>
+
+<ul class="wwsbd-list">
+<li><strong>Press only when commodity, handling, and routing are fully defined</strong></li>
+<li><strong>Avoid assumption-based quoting</strong> on complex securement or high-value cargo</li>
+<li><strong>Maintain deep benches of vetted specialists</strong> for project-based freight</li>
+</ul>
+
+<h4 id="ltlpartial-fuel-consolidation-tool">📦 LTL/Partial: Fuel Consolidation Tool</h4>
+
+<ul class="wwsbd-list">
+<li><strong>10,827 loads</strong> (-0.3%)</li>
+<li><strong>$1.61 posted / $1.66 paid</strong> (+$0.05 spread)</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>What it means:</strong> Modest tightening as shippers look to consolidate smaller shipments against rising truckload fuel surcharges. Useful for density plays, but not a magic savings lever.</p>
+
+<p class="wwsbd-paragraph"><strong>Action:</strong></p>
+
+<ul class="wwsbd-list">
+<li><strong>Offer consolidation on dense regional corridors</strong> (Midwest, Southeast)</li>
+<li><strong>Avoid one-off partials with weak geography</strong> or unclear service tolerances</li>
+<li><strong>Watch cross-dock and terminal delay exposure</strong> closely</li>
+</ul>
+
+<hr />
+
+<h3 id="weather-to-rate-conversion">🌦️ Weather-to-Rate Conversion</h3>
+
+<h4 id="southwest-heat-reefer-risk-multiplier">🔥 Southwest Heat: Reefer Risk Multiplier</h4>
+
+<p class="wwsbd-paragraph">The 96-104°F heat wave gripping Southern California through Sunday is <strong>not just a weather note—it's a service-risk multiplier</strong>:</p>
+
+<ul class="wwsbd-list">
+<li><strong>Higher fuel burn</strong> (reefer units working harder)</li>
+<li><strong>Greater breakdown risk</strong> (equipment strain in extreme temps)</li>
+<li><strong>Longer pre-cool requirements</strong> (delayed loading = product risk)</li>
+<li><strong>Afternoon dwell penalty</strong> (loading at 4 PM vs. 8 AM = temperature drift risk)</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>Broker move:</strong> Book <strong>overnight and early-morning pickups first</strong>. Price late-day appointments 10-15% higher. Require pre-cool confirmation, reefer fuel check, and rescue escalation contacts before dispatch.</p>
+
+<p class="wwsbd-paragraph"><strong>Monday Window:</strong> The coastal eddy drops temps to mid-70s Monday before 90°F+ returns Tuesday. This is the <strong>24-48 hour optimal window to secure reefer equipment at slightly reduced premiums</strong>—but expect demand to compress into that window.</p>
+
+<h4 id="pacific-northwest-flooding-turn-time-drag">🌊 Pacific Northwest Flooding: Turn-Time Drag</h4>
+
+<p class="wwsbd-paragraph">The I-5 and I-90 corridors in Washington are experiencing <strong>major river flooding</strong> (Skagit, Snoqualmie, Stillaguamish). This is creating:</p>
+
+<ul class="wwsbd-list">
+<li><strong>Routing detours</strong> (transit times doubling on some lanes)</li>
+<li><strong>Equipment evacuation</strong> from the flood zone</li>
+<li><strong>Drayage premiums</strong> (25-30% over normal spot rates through weekend)</li>
+<li><strong>Turn-time drag</strong> on Seattle-Everett-Portland local moves</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>Broker move:</strong> <strong>Pad appointments by 24 hours</strong> on all PNW-bound freight through Tuesday. Quote Monday deliveries as the first reliably achievable commitment. Add detour language to all contracts. The I-5 corridor begins normalizing Saturday but expect residual delays through Monday.</p>
+
+<h4 id="indiana-flooding-facility-level-friction">🌧️ Indiana Flooding: Facility-Level Friction</h4>
+
+<p class="wwsbd-paragraph">Minor flooding in Southwest Indiana (White River, Gibson/Knox/Pike counties) is a <strong>facility-access problem, not a blanket regional shutdown</strong>:</p>
+
+<ul class="wwsbd-list">
+<li>Major corridors (I-69) remain open</li>
+<li>Local county roads near SR 57 affected</li>
+<li>Agricultural zone pickups/deliveries face delays</li>
+</ul>
+
+<p class="wwsbd-paragraph"><strong>Broker move:</strong> <strong>Call the shipping point directly</strong> to verify access roads. Add realistic appointment slack. Price extra only where detours or yard access genuinely justify it—don't slap a generic Midwest surcharge on everything.</p>
+
+<hr />
+
+<h3 id="regional-playbook-for-the-next-24-72-hours">🗺️ Regional Playbook for the Next 24-72 Hours</h3>
+
+<h4 id="southeast-florida-package-economics">🌴 Southeast / Florida: Package Economics</h4>
+
+<ul class="wwsbd-list">
+<li>Friday tenders into Florida will be <strong>most expensive to cover</strong></li>
+<li><strong>Sell round-trip economics</strong>, not single-leg rates</li>
+<li>Pair inbound Florida with reloads to Atlanta, Jacksonville, Savannah</li>
+<li>Favor <strong>larger regional fleets</strong> over one-truck operators for service reliability</li>
+</ul>
+
+<h4 id="southwest-reefer-time-of-day-pricing">🌵 Southwest Reefer: Time-Of-Day Pricing</h4>
+
+<ul class="wwsbd-list">
+<li><strong>Night and early-morning pickups</strong> get the best rates</li>
+<li><strong>Late-day appointments</strong> should carry 10-15% premium</li>
+<li><strong>Same-day coverage requests</strong> are the worst buy</li>
+<li>The <strong>Monday heat dip</strong> is the tactical window—front-load coverage Sunday night for Tuesday moves</li>
+</ul>
+
+<h4 id="pacific-northwest-price-the-friction">🌲 Pacific Northwest: Price the Friction</h4>
+
+<ul class="wwsbd-list">
+<li>Seattle-area freight looks ordinary by miles but behaves like premium freight due to turn-time drag</li>
+<li>Add <strong>appointment padding</strong> and <strong>local access assumptions</strong> in writing before quoting</li>
+<li>Avoid <strong>same-day or next-day delivery promises</strong> on PNW freight through Monday</li>
+<li><strong>Drayage carriers are commanding 25-30% premiums</strong>—build this into quotes</li>
+</ul>
+
+<h4 id="savannahcharleston-secondary-port-opportunity">⚓ Savannah/Charleston: Secondary Port Opportunity</h4>
+
+<ul class="wwsbd-list">
+<li>Ocean carrier emergency fuel surcharges (ONE, CMA CGM effective April) are pushing shippers to seek alternatives</li>
+<li><strong>Savannah and Charleston will see secondary volume</strong> as shippers avoid West Coast congestion</li>
+<li>Brokers with <strong>transloading partnerships</strong> have decisive competitive advantage through Q2</li>
+</ul>
+
+<hr />
+
+<h3 id="customer-facing-posture-that-wins-today">💬 Customer-Facing Posture That Wins Today</h3>
+
+<h4 id="with-cost-sensitive-shippers">🎯 With Cost-Sensitive Shippers</h4>
+
+<p class="wwsbd-paragraph"><strong>Say the quiet part clearly:</strong> Fuel is now a <strong>daily input, not a weekly footnote</strong>.</p>
+
+<p class="wwsbd-paragraph">Structure quotes as:</p>
+
+<ul class="wwsbd-list">
+<li><strong>Base linehaul</strong></li>
+<li><strong>Fuel surcharge (FSC)</strong></li>
+<li><strong>24-hour validity</strong></li>
+</ul>
+
+<p class="wwsbd-paragraph">This protects both margin and credibility. Shippers who resist are not facing market reality—explain that <strong>replacement cost has shifted</strong>, not your markup.</p>
+
+<h4 id="with-manufacturing-industrial-accounts">🏭 With Manufacturing / Industrial Accounts</h4>
+
+<p class="wwsbd-paragraph"><strong>Lead with capacity planning, not rate shopping.</strong> Open-deck shippers need to hear:</p>
+
+<ul class="wwsbd-list">
+<li>"The truck is the scarce asset."</li>
+<li>"Spec clarity lowers price more than haggling does."</li>
+</ul>
+
+<p class="wwsbd-paragraph">Ask for commodity, dimensions, securement needs, loading method, unload method, and appointment flexibility upfront.</p>
+
+<h4 id="with-food-produce-customers">🥦 With Food / Produce Customers</h4>
+
+<p class="wwsbd-paragraph"><strong>Position around temperature integrity, not truck availability.</strong> In this heat, the cheapest reefer often becomes the most expensive claim. Emphasize pre-cool, reefer fuel, and breakdown response in every conversation.</p>
+
+<h4 id="with-retail-customers">🛒 With Retail Customers</h4>
+
+<p class="wwsbd-paragraph"><strong>Offer LTL/partial alternatives</strong> where service windows allow—but do not oversell them as magic savings if freight is time-sensitive or cross-dock dependent.</p>
+
+<hr />
+
+<h3 id="risk-controls-that-matter-more-than-usual">🛡️ Risk Controls That Matter More Than Usual</h3>
+
+<ul class="wwsbd-list">
+<li>✅ <strong>Same-day carrier vetting</strong> on premium freight (CA, reefer, specialized)—verify authority, confirm insurance, check identity consistency, watch for contact changes</li>
+<li>🌡️ <strong>Reefer claims prevention</strong>—require setpoint, pre-cool, reefer fuel check, seal protocol, breakdown contact, temperature exception language</li>
+<li>🏗️ <strong>Heavy haul/specialized discipline</strong>—confirm dimensions, weight, axle needs, escort requirements, permit timing, route feasibility before quoting</li>
+<li>🧮 <strong>Quote governance</strong>—reprice any load older than 24 hours, especially diesel-sensitive long haul, reefer, Florida-bound, or weather-affected</li>
+</ul>
+
+<hr />
+
+<h3 id="probability-weighted-48-hour-outlook">📈 Probability-Weighted 48-Hour Outlook</h3>
+
+<ul class="wwsbd-list">
+<li><p class="wwsbd-paragraph"><strong>🟢 Base Case (55%):</strong> Selective tightness continues—reefer stays premium, open-deck remains revenue-rich, PNW friction through Saturday</p>
+
+<ul class="wwsbd-list">
+<li><em>Win by:</em> Buy early, shorten quote windows, package round trips</li>
+</ul></li>
+<li><p class="wwsbd-paragraph"><strong>🟠 Stress Case (30%):</strong> Fuel pressure keeps carriers rejecting older quotes, Seattle/Indiana friction causes more missed appointments, Friday Florida demand spikes harder</p>
+
+<ul class="wwsbd-list">
+<li><em>Win by:</em> Pre-book must-cover freight, communicate reprice logic before tenders fail</li>
+</ul></li>
+<li><p class="wwsbd-paragraph"><strong>🔵 Relief Case (15%):</strong> Some van/specialized lanes remain negotiable, especially short-haul dense corridors</p>
+
+<ul class="wwsbd-list">
+<li><em>Win by:</em> Selectively press specialized and reload-friendly van, but hold firm on reefer</li>
 </ul></li>
 </ul>
 
 <hr />
 
-<h3 id="risk-controls-that-matter-more-than-usual">🛡️ Risk controls that matter more than usual</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>✅ Quote governance</strong></p>
-
-<ul class="wwsbd-list">
-<li>Reprice any shipment that is:</li>
-<li><strong>Older than 24 hours</strong></li>
-<li><strong>Long-haul</strong></li>
-<li><strong>Florida-bound</strong></li>
-<li><strong>Reefer</strong></li>
-<li><strong>Weather-exposed</strong></li>
-<li>This is now <strong>coverage control</strong>, not just margin defense.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🌡️ Reefer claims prevention</strong></p>
-
-<ul class="wwsbd-list">
-<li>Require:</li>
-<li><strong>Setpoint confirmation</strong></li>
-<li><strong>Pre-cool confirmation</strong></li>
-<li><strong>Reefer fuel level confirmation</strong></li>
-<li><strong>Seal protocol</strong></li>
-<li><strong>Breakdown escalation contact</strong></li>
-<li><strong>Temperature exception process</strong></li>
-<li>Most reefer losses come from <strong>small misses compounded by heat and dwell</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🏗️ Open-deck execution control</strong></p>
-
-<ul class="wwsbd-list">
-<li>For flatbed, heavy haul, and specialized, confirm:</li>
-<li><strong>Commodity</strong></li>
-<li><strong>Weight</strong></li>
-<li><strong>Dimensions</strong></li>
-<li><strong>Securement</strong></li>
-<li><strong>Permit status</strong></li>
-<li><strong>Escort need</strong></li>
-<li><strong>Load/unload method</strong></li>
-<li>If these details are fuzzy, your “good margin” is usually fake.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🕵️ Fraud and negligent-selection protection</strong></p>
-
-<ul class="wwsbd-list">
-<li>On premium freight, verify:</li>
-<li><strong>Authority</strong></li>
-<li><strong>Insurance</strong></li>
-<li><strong>MC identity consistency</strong></li>
-<li><strong>Driver and dispatcher contact match</strong></li>
-<li><strong>Tracking compliance</strong></li>
-<li>Rising rate environments attract bad actors. Fraud discipline should tighten with rate pressure.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🛣️ Weather service buffers</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Southern California reefer:</strong> build buffer around heat and dwell</li>
-<li><strong>Seattle-area freight:</strong> build buffer around access and turn time</li>
-<li><strong>Southwest Indiana:</strong> build buffer around local road and facility access</li>
-<li>Small schedule adjustments up front are cheaper than service recovery later.</li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="probability-weighted-outlook-for-the-next-2472-hours">📈 Probability-weighted outlook for the next 24–72 hours</h3>
-
-<ul class="wwsbd-list">
-<li><p class="wwsbd-paragraph"><strong>🟢 Base case — 55%</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Selective tightness continues</strong></li>
-<li>Open-deck stays strong, van remains firmer than posted screens imply, and reefer stays premium in heat-exposed lanes.</li>
-<li><strong>Winning posture:</strong> buy earlier, shorten quote windows, and separate fuel from linehaul everywhere it matters.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🟠 Stress case — 30%</strong></p>
-
-<ul class="wwsbd-list">
-<li>Fuel pressure, weekend timing, and weather friction create more repricing and more tender fallout than customers expect.</li>
-<li>Southern California reefer and Seattle-area turns are the most likely flash points.</li>
-<li><strong>Winning posture:</strong> pre-cover must-move freight and communicate reprice logic before coverage fails.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>🔵 Relief case — 15%</strong></p>
-
-<ul class="wwsbd-list">
-<li>Some short-haul van and clearly defined specialized freight remain negotiable.</li>
-<li><strong>Winning posture:</strong> selectively press where paid is at or below posted, but do <strong>not</strong> assume broad relief.</li>
-</ul></li>
-</ul>
-
-<hr />
-
-<h3 id="highest-value-actions-for-brokers-today">✅ Highest-value actions for brokers today</h3>
+<h3 id="highest-value-actions-before-your-next-booking-cycle">✅ Highest-Value Actions Before Your Next Booking Cycle</h3>
 
 <ol class="wwsbd-ordered-list">
-<li><p class="wwsbd-paragraph"><strong>Reprice every uncovered load older than one business day</strong></p>
-
-<ul class="wwsbd-list">
-<li>Especially <strong>Florida, reefer, long-haul, and weather-exposed freight</strong>.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Shift your desk time toward open-deck</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>138,826 open-deck loads</strong> is where the volume and revenue concentration sit.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Move Southern California reefer appointments earlier</strong></p>
-
-<ul class="wwsbd-list">
-<li>Morning loading is a real cost-control lever through the weekend.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Separate FSC from linehaul on Southeast and South Florida quotes</strong></p>
-
-<ul class="wwsbd-list">
-<li>Carriers are explicitly pricing fuel risk now.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Lock in Southeast port drayage and transload capacity before month-end</strong></p>
-
-<ul class="wwsbd-list">
-<li>Pull-forward behavior is likely to tighten short-haul capacity.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Pad Seattle-area transit promises immediately</strong></p>
-
-<ul class="wwsbd-list">
-<li>Quote the detour and turn-time risk now, not after the shipment is late.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Use specialized and heavy haul only when the specs are complete</strong></p>
-
-<ul class="wwsbd-list">
-<li>Those are your only real negotiation pockets, but only with clean information.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Push partial/LTL as a tactical solution, not a universal one</strong></p>
-
-<ul class="wwsbd-list">
-<li>Use it where service windows allow and lane density supports consolidation.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Sell trip quality to carriers</strong></p>
-
-<ul class="wwsbd-list">
-<li>Clean appointments, clear details, reload path, and predictable detention beat sloppy high-rate freight more often than most brokers think.</li>
-</ul></li>
-<li><p class="wwsbd-paragraph"><strong>Track three internal metrics through the close</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Quote-to-cover time</strong></li>
-<li><strong>Paid-vs-posted variance by equipment type</strong></li>
-<li><strong>Requotes as a share of uncovered loads</strong></li>
-<li>Those three numbers will tell you faster than intuition whether your desk is pricing reality.</li>
-</ul></li>
+<li><strong>Reprice every uncovered load older than 24 hours</strong>—especially diesel-sensitive long haul, reefer, Florida, weather corridors</li>
+<li><strong>Shift broker time toward open-deck</strong>—138,826 loads is the biggest revenue pool</li>
+<li><strong>Pre-cover reefer before sending firm customer numbers</strong>—$2.70 paid vs $2.65 posted says late buying loses</li>
+<li><strong>Sell Florida as round-trip economics</strong>—single-leg Friday tenders = margin and service risk</li>
+<li><strong>Use specialized as negotiation pocket</strong>—$2.59 paid vs $2.60 posted gives room when specs are clean</li>
+<li><strong>Pad PNW and Indiana appointments now</strong>—small time adjustments today cost less than service recovery tomorrow</li>
+<li><strong>Track three internal metrics:</strong> Quote-to-cover time, loads repriced after 24 hours, paid-vs-posted variance by equipment type</li>
 </ol>
 
-<h3 id="bottom-line">🧭 Bottom line</h3>
+<hr />
+
+<h3 id="bottom-line">🧭 Bottom Line</h3>
+
+<p class="wwsbd-paragraph">The market is <strong>smaller but firmer</strong>—183,929 loads at $2.47/mile with $5.159 diesel means the game is <strong>replacement cost, route quality, and reload certainty</strong>. The weekend 72-hour window (PNW flood recession + Monday SoCal heat dip) is the tactical inflection point.</p>
+
+<p class="wwsbd-paragraph"><strong>The brokers who win the next 48 hours will:</strong></p>
 
 <ul class="wwsbd-list">
-<li><strong>The board is smaller, but the market is not cheaper.</strong></li>
-<li><strong>$5.159 diesel</strong> is keeping a hard floor under real truck replacement cost.</li>
-<li><strong>Open-deck is the primary revenue game.</strong></li>
-<li><strong>Reefer is the primary risk-management game.</strong></li>
-<li><strong>Van is selectively tight, not soft.</strong></li>
-<li><strong>Heavy haul and specialized are the only disciplined buy-side leverage pockets.</strong></li>
+<li><strong>Reprice faster</strong> on stale quotes</li>
+<li><strong>Explain lane-specific reality</strong> (fuel + weather) more clearly</li>
+<li><strong>Package reload economics</strong> more intelligently</li>
+<li><strong>Position for the ocean carrier surcharge shift</strong> (April) by building transloading partnerships now</li>
 </ul>
 
-<p class="wwsbd-paragraph"><strong>The brokers who win today will do four things better than the field:</strong></p>
-
-<ul class="wwsbd-list">
-<li><strong>Reprice faster</strong></li>
-<li><strong>Explain lane-specific economics more clearly</strong></li>
-<li><strong>Package reloads and round-trip logic more intelligently</strong></li>
-<li><strong>Refuse to confuse posted numbers with executable coverage</strong></li>
-</ul>
+<hr />
 </div>
         </div>
         <h2>📅 This Day in History</h2>
         
             <div style="padding: 15px; margin: 15px 0;">
-                <strong>1888:</strong> The premiere of the very first Romani language operetta is staged in Moscow, Russia.
+                <strong>1890:</strong> Chancellor of the German Empire Otto von Bismarck is dismissed by Emperor Wilhelm II.
             </div>
             
             <div style="padding: 15px; margin: 15px 0;">
-                <strong>1914:</strong> In the Curragh incident, over 100 British Army officers threaten to resign if ordered to march against the Ulster Volunteers.
+                <strong>1923:</strong> The Arts Club of Chicago hosts the opening of Pablo Picasso's first United States showing, entitled Original Drawings by Pablo Picasso, becoming an early proponent of modern art in the United States.
             </div>
             
             <div style="padding: 15px; margin: 15px 0;">
-                <strong>2019:</strong> Kassym-Jomart Tokayev is sworn in as acting president of Kazakhstan, following the resignation of long-time president Nursultan Nazarbayev.
+                <strong>2003:</strong> Iraq War: The United States, the United Kingdom, Australia, and Poland begin an invasion of Iraq.
             </div>
             
         <h2>💭 Quote of the Day</h2>
         
         <div style="padding: 20px; margin: 20px 0; background-color: #f8f9fa; border-left: 4px solid #00adf1; border-radius: 4px;">
             <p style="font-size: 1.1em; font-style: italic; color: #333; margin: 0 0 15px 0; line-height: 1.6;">
-                "The less you try to impress, the more peaceful you can be."
+                "Even the finest sword plunged into salt water will eventually rust."
             </p>
             <p style="text-align: right; margin: 0; color: #666; font-size: 0.95em;">
-                — Maxime Lagace
+                — Sun Tzu
             </p>
         </div>
             
